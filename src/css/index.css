@@ -1,0 +1,99 @@
+@import url("https://fontsapi.zeoseven.com/69/main/result.css");
+
+body {
+    font-family: "Noto Sans CJK", serif;
+    font-weight: normal;
+    /* font-feature-settings: "hwid"; 启用等宽变化字形 */
+    background: #E7E7E7;
+}
+
+.Introduce {
+    display: flex;
+    flex-direction: column;
+}
+
+.Head {
+    display: flex;
+    gap: 100px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #A19E9E 0%, #FFFFFF 50%, #B9B9B9 75%, #898888 100%);
+}
+
+#githubName {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 36px;
+    background: linear-gradient(to bottom, #1E1E1E 0%, #D3D3D3 50%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 9px;
+}
+
+.headMenu {
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    background: linear-gradient(to bottom, #1E1E1E 0%, #D3D3D3 50%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+}
+
+.view {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    display: flex;
+}
+
+.viewWord {
+    display: flex;
+    flex-direction: row;
+}
+
+.Content {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+
+.left {
+    display: flex;
+}
+
+.footerWords {
+    display: flex;
+}
+
+.medium {
+    display: flex;
+}
+
+.right {
+    display: flex;
+}
+
+.Menu {
+    display: flex;
+}
+
