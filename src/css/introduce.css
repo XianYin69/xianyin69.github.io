@@ -12,7 +12,7 @@ a {
     display: block;
 }
 
-.Introduce {
+.Desktop {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -33,7 +33,7 @@ a {
     background: linear-gradient(to bottom, #A19E9E 0%, #FFFFFF 50%, #B9B9B9 75%, #898888 100%);
 }
 
-#githubName {
+#GITHUB_NAME {
     font-style: normal;
     font-weight: bolder;
     font-size: 30px;
@@ -45,7 +45,7 @@ a {
     bottom: 0;
 }
 
-.headMenu {
+.HeadMenu {
     display: flex;
     gap: 200px;
     flex-direction: row;
@@ -62,8 +62,8 @@ a {
     left: 500px;
 }
 
-.Link:hover {
-    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+.Introduction {
+    background: linear-gradient(to bottom, #1E1E1E 0%, #B6B6B6 50%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -80,6 +80,12 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+.Link:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .Body {
     display: flex;
     flex-direction: column;
@@ -90,7 +96,7 @@ a {
     height: 100%;
 }
 
-.view {
+.View {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -98,35 +104,52 @@ a {
     left: 0;
     margin-left: 0;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background: linear-gradient(rgba(114, 114, 114, 0.22) 0%, rgba(255, 255, 255, 0.1768) 50%, rgba(21, 21, 21, 0.13) 50%);
 }
 
-.viewWord {
+.Image {
+    display: flex;
     position: absolute;
-    top: 0;
     left: 10px;
+    bottom: 10px;
+    height: 175px;
+    width: 175px;
+}
+
+.ViewWord {
+    position: absolute;
+    top: 10px;
+    left: 195px;
     width: 100%;
     height: auto;
 
 }
 
-#viewWord-1 {
+#GITHUB_IMAGE {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 175px;
+}
+
+#VIEW_WORD_1 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: normal;
+    left: 10px;
+    top: 10px;
+}
+
+#VIEW_WORD_2 {
     position: absolute;
     font-size: 50px;
     font-weight: bolder;
     font-style: normal;
-    left: 0;
-    top: 0;
-}
-
-#viewWord-2 {
-    position: absolute;
-    font-size: 70px;
-    font-weight: bolder;
-    font-style: normal;
-    left: 5px;
-    top: 0;
+    left: 13px;
+    top: 14px;
     background: rgba(80, 80, 80, 0.13);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -134,8 +157,6 @@ a {
 
 .Content {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
     position: absolute;
     font-size: 30px;
     font-weight: normal;
@@ -144,80 +165,14 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     left: 10px;
-    top: 135px;
-    width: 100%;
-    height: auto;
+    top: 235px;
 }
 
-.Project_1 {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 5px;
-    left: auto;
-    right: 100px;
-    background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
-    border-radius: 25px;
+b {
+    font-size: 40px;
 }
 
-#Project_1 {
-    font-size: 50px;
-    font-weight: bold;
-    font-style: normal;
-    background: #1E1E1E;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    top: 50px;
-    bottom: 0;
-    margin-left: 200px;
-    margin-top: 20px;
-}
-
-.Project_1:hover {
-    background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    #Project_1 {
-        background: #E7E7E7;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-.Project_2 {
-    display: block;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 150px;
-    left: auto;
-    right: 100px;
-    background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
-    border-radius: 25px;
-}
-
-#Project_2 {
-    font-size: 50px;
-    font-weight: bold;
-    font-style: normal;
-    background: #1E1E1E;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin-left: 200px;
-    margin-top: 20px;
-}
-
-.Project_2:hover {
-    background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    #Project_2 {
-        background: #E7E7E7;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-.footer {
+.Footer {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -229,7 +184,7 @@ a {
     top: 100%;
 }
 
-.left {
+.Left {
     display: flex;
     position: absolute;
     width: 400px;
@@ -237,22 +192,22 @@ a {
     top: 0;
 }
 
-.footerWords {
+.FooterWords {
     font-style: normal;
     font-weight: bold;
 }
 
-.moreInfo {
+.MoreInfo {
     position: absolute;
     bottom: 5px;
     left: 5px;
-    font-size: 10px;
+    font-size: 8px;
     background: #1E1E1E;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#footerWord-1 {
+#FOOTER_WORD_1 {
     position: absolute;
     font-size: 25px;
     background: rgba(103, 103, 103, 1);
@@ -262,7 +217,7 @@ a {
     left: 10px;
 }
 
-#footerWord-2 {
+#FOOTER_WORD_2 {
     position: absolute;
     font-size: 50px;
     background: rgba(103, 103, 103, 0.26);
@@ -272,7 +227,7 @@ a {
     left: 15px;
 }
 
-.medium {
+.Medium {
     display: block;
     position: absolute;
     top: 0;
@@ -284,7 +239,7 @@ a {
     background: rgba(103, 103, 103, 0.35);
 }
 
-.right {
+.Right {
     display: block;
     position: absolute;
     top: 0;
