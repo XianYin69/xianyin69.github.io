@@ -12,7 +12,7 @@ a {
     display: block;
 }
 
-.desktop {
+.Desktop {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -33,7 +33,7 @@ a {
     background: linear-gradient(to bottom, #A19E9E 0%, #FFFFFF 50%, #B9B9B9 75%, #898888 100%);
 }
 
-#githubName {
+#GITHUB_NAME {
     font-style: normal;
     font-weight: bolder;
     font-size: 30px;
@@ -45,7 +45,7 @@ a {
     bottom: 0;
 }
 
-.headMenu {
+.HeadMenu {
     display: flex;
     gap: 200px;
     flex-direction: row;
@@ -96,7 +96,7 @@ a {
     height: 100%;
 }
 
-.view {
+.View {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -108,7 +108,7 @@ a {
     background: linear-gradient(rgba(114, 114, 114, 0.22) 0%, rgba(255, 255, 255, 0.1768) 50%, rgba(21, 21, 21, 0.13) 50%);
 }
 
-.viewWord {
+.ViewWord {
     position: absolute;
     top: 0;
     left: 10px;
@@ -117,7 +117,7 @@ a {
 
 }
 
-#viewWord-1 {
+#VIEW_WORD_1 {
     position: absolute;
     font-size: 50px;
     font-weight: bolder;
@@ -126,7 +126,7 @@ a {
     top: 0;
 }
 
-#viewWord-2 {
+#VIEW_WORD_2 {
     position: absolute;
     font-size: 70px;
     font-weight: bolder;
@@ -186,7 +186,7 @@ a {
     }
 }
 
-.footer {
+.Footer {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -198,7 +198,7 @@ a {
     top: 100%;
 }
 
-.left {
+.Left {
     display: flex;
     position: absolute;
     width: 400px;
@@ -206,12 +206,12 @@ a {
     top: 0;
 }
 
-.footerWords {
+.FooterWords {
     font-style: normal;
     font-weight: bold;
 }
 
-.moreInfo {
+.MoreInfo {
     position: absolute;
     bottom: 5px;
     left: 5px;
@@ -221,7 +221,7 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
-#footerWord-1 {
+#FOOTER_WORD_1 {
     position: absolute;
     font-size: 25px;
     background: rgba(103, 103, 103, 1);
@@ -231,7 +231,7 @@ a {
     left: 10px;
 }
 
-#footerWord-2 {
+#FOOTER_WORD_2 {
     position: absolute;
     font-size: 50px;
     background: rgba(103, 103, 103, 0.26);
@@ -241,7 +241,7 @@ a {
     left: 15px;
 }
 
-.medium {
+.Medium {
     display: block;
     position: absolute;
     top: 0;
@@ -253,7 +253,7 @@ a {
     background: rgba(103, 103, 103, 0.35);
 }
 
-.right {
+.Right {
     display: block;
     position: absolute;
     top: 0;

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const emailInfo = document.querySelectorAll("#eMail");
+    const emailInfo = document.querySelectorAll("#EMAIL");
     emailInfo.forEach(item => {
         item.addEventListener("click", function() {
             const email = this.getAttribute("data-email");
