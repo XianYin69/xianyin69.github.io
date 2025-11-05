@@ -9,9 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return mobileRegex.test(ua.toLocaleLowerCase());
     }
 
-    if (isMobile) {
-        location.href = INDEX_MOBILE;
-    } else {
-        location.href = INDEX_DESKTOP;
+    function isMobileFunction() {
+        if (isMobile) {
+            location.href = INDEX_MOBILE;
+        } else {
+            location.href = INDEX_DESKTOP;
+        }
     }
+
+    isMobileFunction();
 })

@@ -1,0 +1,17 @@
+@import url("https://fontsapi.zeoseven.com/69/main/result.css");
+
+body {
+    font-family: "Noto Sans CJK", serif;
+    font-weight: normal;
+    /* font-feature-settings: "hwid"; 启用等宽变化字形 */
+    background: #E7E7E7;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(to bottom,  #410001 0%, #D20103 45%, #410001 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
