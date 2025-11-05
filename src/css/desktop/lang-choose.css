@@ -175,7 +175,7 @@ a {
 
 .Project_1:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    #Project_1 {
+    #PROJECT_1 {
         background: #E7E7E7;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -210,7 +210,7 @@ a {
 
 .Project_2:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    #Project_2 {
+    #PROJECT_2 {
         background: #E7E7E7;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
