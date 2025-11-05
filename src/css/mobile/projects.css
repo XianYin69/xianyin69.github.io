@@ -1,0 +1,278 @@
+@import url("https://fontsapi.zeoseven.com/69/main/result.css");
+
+body {
+    font-family: "Noto Sans CJK", serif;
+    font-weight: normal;
+    /* font-feature-settings: "hwid"; 启用等宽变化字形 */
+    background: #E7E7E7;
+}
+
+a {
+    text-decoration-line: none;
+    display: block;
+}
+
+.Desktop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Head {
+    display: flex;
+    gap: 5%;
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #A19E9E 0%, #FFFFFF 50%, #B9B9B9 75%, #898888 100%);
+}
+
+#GITHUB_NAME {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 30px;
+    background: linear-gradient(to bottom, #1E1E1E 0%, #D3D3D3 50%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin-left: 5px;
+    bottom: 0;
+}
+
+.HeadMenu {
+    display: flex;
+    gap: 200px;
+    flex-direction: row;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    background: linear-gradient(to bottom, #898888 0%, #E7E7E7 50%, #1E1E1E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    width: 75%;
+    height: 35px;
+    bottom: 0;
+    left: 500px;
+}
+
+.Projects {
+    background: linear-gradient(to bottom, #1E1E1E 0%, #B6B6B6 50%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Projects:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Introduction:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Link:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.View {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(114, 114, 114, 0.22) 0%, rgba(255, 255, 255, 0.1768) 50%, rgba(21, 21, 21, 0.13) 50%);
+}
+
+.ViewWord {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    height: auto;
+
+}
+
+#VIEW_WORD_1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: normal;
+    left: 0;
+    top: 0;
+}
+
+#VIEW_WORD_2 {
+    position: absolute;
+    font-size: 70px;
+    font-weight: bolder;
+    font-style: normal;
+    left: 5px;
+    top: 0;
+    background: rgba(80, 80, 80, 0.13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Content {
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    background: #1E1E1E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 10px;
+    top: 135px;
+    width: 100%;
+    height: auto;
+}
+
+.Project_1 {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    left: auto;
+    right: 100px;
+    background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
+    border-radius: 25px;
+}
+
+#PROJECT_1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    background: #1E1E1E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 50px;
+    bottom: 0;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.Project_1:hover {
+    background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
+    #Project_1 {
+        background: #E7E7E7;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.Footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #B6B6B6 0%, #E2E2E2 50%, #A7A7A7 100%);
+    top: 100%;
+}
+
+.Left {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 0;
+}
+
+.FooterWords {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.MoreInfo {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 10px;
+    background: #1E1E1E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#FOOTER_WORD_1 {
+    position: absolute;
+    font-size: 25px;
+    background: rgba(103, 103, 103, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 5px;
+    left: 10px;
+}
+
+#FOOTER_WORD_2 {
+    position: absolute;
+    font-size: 50px;
+    background: rgba(103, 103, 103, 0.26);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 7px;
+    left: 15px;
+}
+
+.Medium {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 350px;
+    right: 0;
+    width: 5px;
+    height: 100px;
+    background: rgba(103, 103, 103, 0.35);
+}
+
+.Right {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 355px;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(109, 109, 109, 0.21);
+}
+
+.Menu {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    background: #1E1E1E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
