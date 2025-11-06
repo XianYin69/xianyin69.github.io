@@ -157,9 +157,10 @@ b {
 
 .MoreInfo {
     position: absolute;
-    bottom: 5px;
+    top: 29%;
+    bottom: 0;
     left: 5px;
-    font-size: 8px;
+    font-size: 14px;
     background: #1E1E1E;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -167,7 +168,7 @@ b {
 
 #FOOTER_WORD_1 {
     position: absolute;
-    font-size: 25px;
+    font-size:35px;
     background: rgba(103, 103, 103, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -177,7 +178,7 @@ b {
 
 #FOOTER_WORD_2 {
     position: absolute;
-    font-size: 50px;
+    font-size: 70px;
     background: rgba(103, 103, 103, 0.26);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -212,10 +213,17 @@ b {
 }
 
 .Menu {
-    font-size: 10px;
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
     background: #1E1E1E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.2s;
+}
+
+.Menu:hover {
+    background: #707070;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
