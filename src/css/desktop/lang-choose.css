@@ -245,7 +245,7 @@ a {
     top: 0;
 }
 
-.FooterWords {
+.FooterWord {
     font-style: normal;
     font-weight: bold;
 }
@@ -260,7 +260,7 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
-#FOOTER_WORD_2 {
+#FOOTER_WORD_1 {
     position: absolute;
     font-size: 25px;
     background: rgba(103, 103, 103, 1);
