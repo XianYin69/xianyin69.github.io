@@ -155,9 +155,10 @@ a {
     position: absolute;
     top: 5px;
     left: auto;
-    right: 100px;
+    right: 220px;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
+    transition: background-color 0.3s, right 0.4s;
 }
 
 #PROJECT_1 {
@@ -169,16 +170,19 @@ a {
     -webkit-text-fill-color: transparent;
     top: 50px;
     bottom: 0;
-    margin-left: 200px;
+    margin-left: 220px;
     margin-top: 20px;
+    transition: 0.3s;
 }
 
 .Project_1:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
+    right: 100px;
     #PROJECT_1 {
         background: #E7E7E7;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-left: 200px;
     }
 }
 
@@ -189,9 +193,10 @@ a {
     position: absolute;
     top: 150px;
     left: auto;
-    right: 100px;
+    right: 220px;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
+    transition: background-color 0.3s, right 0.4s;
 }
 
 #PROJECT_2 {
@@ -204,16 +209,19 @@ a {
     position: absolute;
     top: 0;
     bottom: 0;
-    margin-left: 200px;
+    margin-left: 220px;
     margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 .Project_2:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
+    right: 100px;
     #PROJECT_2 {
         background: #E7E7E7;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        margin-left: 200px;
     }
 }
 
@@ -237,7 +245,7 @@ a {
     top: 0;
 }
 
-.FooterWords {
+.FooterWord {
     font-style: normal;
     font-weight: bold;
 }
@@ -252,7 +260,7 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
-#FOOTER_WORD_2 {
+#FOOTER_WORD_1 {
     position: absolute;
     font-size: 25px;
     background: rgba(103, 103, 103, 1);

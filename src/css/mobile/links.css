@@ -12,7 +12,7 @@ a {
     display: block;
 }
 
-.Desktop {
+.Mobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -37,53 +37,12 @@ a {
     font-style: normal;
     font-weight: bolder;
     font-size: 30px;
-    background: linear-gradient(to bottom, #898888 0%, #E7E7E7 50%, #1E1E1E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    margin-left: 5px;
-    bottom: 0;
-}
-
-.HeadMenu {
-    display: flex;
-    gap: 200px;
-    flex-direction: row;
-    font-size: 25px;
-    font-weight: bold;
-    font-style: normal;
     background: linear-gradient(to bottom, #1E1E1E 0%, #D3D3D3 50%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
-    width: 75%;
-    height: 35px;
     bottom: 0;
-    left: 500px;
-}
-
-.Link {
-    background: linear-gradient(to bottom, #1E1E1E 0%, #B6B6B6 50%, #000000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Link:hover {
-    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Introduction:hover {
-    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Projects:hover {
-    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0 25% 0 35%;
 }
 
 .Body {
@@ -119,7 +78,7 @@ a {
 
 #VIEW_WORD_1 {
     position: absolute;
-    font-size: 50px;
+    font-size: 65px;
     font-weight: bolder;
     font-style: normal;
     left: 0;
@@ -128,10 +87,10 @@ a {
 
 #VIEW_WORD_2 {
     position: absolute;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: bolder;
     font-style: normal;
-    left: 5px;
+    left: 55px;
     top: 0;
     background: rgba(80, 80, 80, 0.13);
     -webkit-background-clip: text;
@@ -140,6 +99,8 @@ a {
 
 .Content {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     position: absolute;
     font-size: 30px;
     font-weight: normal;
@@ -159,12 +120,13 @@ a {
     position: absolute;
     top: 5px;
     left: auto;
-    right: 100px;
+    right: 250px;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
+    transition: background 0.3s, right 0.4s;
 }
 
-#Project_1 {
+#PROJECT_1 {
     font-size: 50px;
     font-weight: bold;
     font-style: normal;
@@ -173,13 +135,15 @@ a {
     -webkit-text-fill-color: transparent;
     top: 50px;
     bottom: 0;
-    margin-left: 200px;
+    margin-left: 250px;
     margin-top: 20px;
+    transition: background 0.3s;
 }
 
 .Project_1:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    #Project_1 {
+    right: 10%;
+    #PROJECT_1 {
         background: #E7E7E7;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -190,12 +154,11 @@ a {
     display: flex;
     flex-direction: row;
     position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 100px;
     background: linear-gradient(to bottom, #B6B6B6 0%, #E2E2E2 50%, #A7A7A7 100%);
-    top: 100%;
+    top: 88%;
+    bottom: 10%;
 }
 
 .Left {
@@ -206,16 +169,17 @@ a {
     top: 0;
 }
 
-.FooterWords {
+.FooterWord {
     font-style: normal;
     font-weight: bold;
 }
 
 .MoreInfo {
     position: absolute;
-    bottom: 5px;
+    top: 29%;
+    bottom: 0;
     left: 5px;
-    font-size: 10px;
+    font-size: 14px;
     background: #1E1E1E;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,7 +187,7 @@ a {
 
 #FOOTER_WORD_1 {
     position: absolute;
-    font-size: 25px;
+    font-size:35px;
     background: rgba(103, 103, 103, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -233,7 +197,7 @@ a {
 
 #FOOTER_WORD_2 {
     position: absolute;
-    font-size: 50px;
+    font-size: 70px;
     background: rgba(103, 103, 103, 0.26);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -268,11 +232,87 @@ a {
 }
 
 .Menu {
-    font-size: 10px;
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
     background: #1E1E1E;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: background 0.2s;
 }
 
+.Menu:hover {
+    background: #707070;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.FixedNavigator {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to bottom, #A8A8A8 0%, #E8E8E8 50%, #9E9E9E 100%);
+}
+
+#FOOT_MENU_BACKGROUND_1 {
+    background: rgba(103, 103, 103, 0.01);
+    width: 100%;
+    height: 100%;
+    transition: background 0.2s;
+}
+
+#FOOT_MENU_BACKGROUND_2 {
+    background: rgba(103, 103, 103, 0.01);
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.2s;
+}
+
+#FOOT_MENU_BACKGROUND_3 {
+    background: rgba(103, 103, 103, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.FootMenu {
+    display: flex;
+    position: fixed;
+    gap: 24%;
+    flex-direction: row;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    background: linear-gradient(to bottom, #707070 0%, #D9D9D9 70%, #1E1E1E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    height: auto;
+    bottom: 1%;
+    margin: 0 15% 0 15%;
+}
+
+.Introduction:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    #FOOT_MENU_BACKGROUND_1 {
+        background: rgba(103, 103, 103, 0.5);
+    }
+}
+
+.Projects:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    #FOOT_MENU_BACKGROUND_2 {
+        background: rgba(103, 103, 103, 0.5);
+    }
+}
+
+.Link:hover {
+    background: linear-gradient(to bottom, #E7E7E7 0%, #898888 50%, #E2E2E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
