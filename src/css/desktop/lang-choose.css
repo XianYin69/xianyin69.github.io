@@ -172,7 +172,16 @@ a {
     bottom: 0;
     margin-left: 220px;
     margin-top: 20px;
-    transition: 0.3s;
+}
+
+#Light_1 {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background: radial-gradient(rgba(225, 225, 225, 0.6) 30%, rgba(225, 225, 225, 0) 70%);
+    position: absolute;
+    left: -30%;
+    transition: width 0.9s , left 0.1s;
 }
 
 .Project_1:hover {
@@ -183,6 +192,15 @@ a {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-left: 200px;
+    }
+    #Light_1 {
+        width: 60%;
+    }
+}
+
+.Project_1:active {
+    #Light_1 {
+        left: 80%;
     }
 }
 
@@ -212,6 +230,36 @@ a {
     margin-left: 220px;
     margin-top: 20px;
     transition: background-color 0.3s;
+}
+
+#Light_2 {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background: radial-gradient(rgba(225, 225, 225, 0.6) 30%, rgba(225, 225, 225, 0) 70%);
+    position: absolute;
+    left: -30%;
+    transition: width 0.9s , left 0.1s;
+}
+
+.Project_2:hover {
+    background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
+    right: 100px;
+    #PROJECT_2 {
+        background: #E7E7E7;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 200px;
+    }
+    #Light_2 {
+        width: 60%;
+    }
+}
+
+.Project_2:active {
+    #Light_2 {
+        left: 80%;
+    }
 }
 
 .Project_2:hover {
@@ -313,4 +361,92 @@ a {
     background: #1E1E1E;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (orientation: portrait) {
+    #GITHUB_NAME {
+        font-size: 20px;
+    }
+
+    .HeadMenu {
+        left: 220px;
+        gap: 100px;
+    }
+
+    .View {
+        height: 150px;
+    }
+
+    #VIEW_WORD_1 {
+        font-size: 70px;
+    }
+
+    #VIEW_WORD_2 {
+        font-size: 90px;
+    }
+
+    .Content {
+        top: 160px;
+    }
+
+    .Footer {
+        height: 190px;
+    }
+
+    .Left {
+        height: 100%;
+    }
+
+    #FOOTER_WORD_1 {
+        font-size: 45px;
+    }
+
+    .Project_1 {
+        height: 80px;
+        width: 80%;
+        right: 400px;
+    }
+
+    .Project_1:hover {
+        right: 300px;
+    }
+
+    #PROJECT_1 {
+        margin-top: 5px;
+    }
+
+    #FOOTER_WORD_2 {
+        font-size: 45px;
+    }
+
+    .Project_2 {
+        height: 80px;
+        width: 80%;
+        right: 400px;
+    }
+
+    .Project_2:hover {
+        right: 300px;
+    }
+
+    #PROJECT_2 {
+        margin-top: 5px;
+    }
+
+    .MoreInfo {
+        bottom: 10%;
+        font-size: 15px;
+    }
+
+    .Medium {
+        height: 100%;
+    }
+
+    .Right {
+        height: 180px;
+    }
+
+    .Menu {
+        font-size: 20px;
+    }
 }

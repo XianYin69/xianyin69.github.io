@@ -261,3 +261,47 @@ b {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (orientation: portrait) {
+    #GITHUB_NAME {
+        font-size: 20px;
+    }
+
+    .HeadMenu {
+        left: 220px;
+        gap: 100px;
+    }
+
+    .Footer {
+        height: 190px;
+    }
+
+    .Left {
+        height: 100%;
+    }
+
+    #FOOTER_WORD_1 {
+        font-size: 45px;
+    }
+
+    #FOOTER_WORD_2 {
+        font-size: 65px;
+    }
+
+    .MoreInfo {
+        bottom: 10%;
+        font-size: 15px;
+    }
+
+    .Medium {
+        height: 100%;
+    }
+
+    .Right {
+        height: 180px;
+    }
+
+    .Menu {
+        font-size: 20px;
+    }
+}
