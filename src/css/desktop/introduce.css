@@ -181,7 +181,7 @@ b {
     width: 100%;
     height: 100px;
     background: linear-gradient(to bottom, #B6B6B6 0%, #E2E2E2 50%, #A7A7A7 100%);
-    top: 100%;
+    top: auto;
 }
 
 .Left {
