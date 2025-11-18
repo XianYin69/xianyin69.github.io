@@ -159,7 +159,7 @@ a {
     position: absolute;
     top: 5px;
     left: auto;
-    right: 220px;
+    right: 16%;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
     transition: background-color 0.3s, right 0.4s;
@@ -190,7 +190,7 @@ a {
 
 .Project_1:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    right: 100px;
+    right: 10%;
     #PROJECT_1 {
         background: #E7E7E7;
         -webkit-background-clip: text;
@@ -215,7 +215,7 @@ a {
     position: absolute;
     top: 150px;
     left: auto;
-    right: 220px;
+    right: 16%;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
     transition: background-color 0.3s, right 0.4s;
@@ -248,7 +248,7 @@ a {
 
 .Project_2:hover {
     background: linear-gradient(to bottom, #898888 0%, #898888 50%, #1E1E1E 100%);
-    right: 100px;
+    right: 10%;
     #PROJECT_2 {
         background: #E7E7E7;
         -webkit-background-clip: text;
@@ -275,7 +275,7 @@ a {
     width: 100%;
     height: 100px;
     background: linear-gradient(to bottom, #B6B6B6 0%, #E2E2E2 50%, #A7A7A7 100%);
-    top: 100%;
+    top: auto;
 }
 
 .Left {
@@ -394,6 +394,10 @@ a {
         font-size: 45px;
     }
 
+    #FOOTER_WORD_2 {
+        font-size: 65px;
+    }
+
     .Project_1 {
         height: 80px;
         width: 80%;
@@ -401,15 +405,13 @@ a {
     }
 
     .Project_1:hover {
-        right: 300px;
+        right: 30%;
     }
 
     #PROJECT_1 {
-        margin-top: 5px;
-    }
-
-    #FOOTER_WORD_2 {
-        font-size: 45px;
+        margin-top: 4%;
+        margin-left: 40%;
+        font-size: 25px;
     }
 
     .Project_2 {
@@ -419,11 +421,13 @@ a {
     }
 
     .Project_2:hover {
-        right: 300px;
+        right: 30%;
     }
 
     #PROJECT_2 {
-        margin-top: 5px;
+        margin-top: 4%;
+        margin-left: 40%;
+        font-size: 25px;
     }
 
     .MoreInfo {

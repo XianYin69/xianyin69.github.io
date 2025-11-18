@@ -76,7 +76,7 @@ a {
 
 #VIEW_WORD_1 {
     position: absolute;
-    font-size: 65px;
+    font-size: 55px;
     font-weight: bolder;
     font-style: normal;
     left: 0;
@@ -85,7 +85,7 @@ a {
 
 #VIEW_WORD_2 {
     position: absolute;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bolder;
     font-style: normal;
     left: 55px;
@@ -114,18 +114,18 @@ a {
 
 .Project_1 {
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: absolute;
     top: 5px;
     left: auto;
-    right: 250px;
+    right: 23%;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
     transition: background 0.3s, right 0.4s;
 }
 
 #PROJECT_1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     font-style: normal;
     background: #1E1E1E;
@@ -170,18 +170,18 @@ a {
 .Project_2 {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: auto;
-    right: 250px;
+    right: 23%;
     background: linear-gradient(to bottom, rgba(137, 137, 137, 0.40) 0%, rgba(241, 241, 241, 0.4096) 45%, rgba(156, 156, 156, 0.42) 100%);
     border-radius: 25px;
     transition: background 0.3s, right 0.4s;
 }
 
 #PROJECT_2 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     font-style: normal;
     background: #1E1E1E;
@@ -229,10 +229,9 @@ a {
     flex-direction: row;
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background: linear-gradient(to bottom, #B6B6B6 0%, #E2E2E2 50%, #A7A7A7 100%);
-    top: 88%;
-    bottom: 10%;
+    top: 200%;
 }
 
 .Left {
@@ -249,8 +248,9 @@ a {
 }
 
 .MoreInfo {
+    height: 100px;
     position: absolute;
-    top: 29%;
+    top: 40px;
     bottom: 0;
     left: 5px;
     font-size: 14px;
@@ -261,7 +261,7 @@ a {
 
 #FOOTER_WORD_1 {
     position: absolute;
-    font-size:35px;
+    font-size:40px;
     background: rgba(103, 103, 103, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -271,7 +271,7 @@ a {
 
 #FOOTER_WORD_2 {
     position: absolute;
-    font-size: 70px;
+    font-size: 80px;
     background: rgba(103, 103, 103, 0.26);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -287,7 +287,7 @@ a {
     left: 350px;
     right: 0;
     width: 5px;
-    height: 100px;
+    height: 100%;
     background: rgba(103, 103, 103, 0.35);
 }
 
@@ -299,7 +299,7 @@ a {
     right: 0;
     left: 355px;
     width: 100%;
-    height: 80px;
+    height: 130px;
     margin-top: 10px;
     margin-bottom: 10px;
     background: rgba(109, 109, 109, 0.21);
@@ -324,7 +324,7 @@ a {
 .FixedNavigator {
     margin: 0 0 0 0;
     width: 100%;
-    height: 30px;
+    height: 35px;
     position: fixed;
     bottom: 0;
     background: linear-gradient(to bottom, #A8A8A8 0%, #E8E8E8 50%, #9E9E9E 100%);
@@ -341,13 +341,13 @@ a {
     background: rgba(103, 103, 103, 0.01);
     width: 100%;
     height: 100%;
-    transition: background-color 0.2s;
 }
 
 #FOOT_MENU_BACKGROUND_3 {
     background: rgba(103, 103, 103, 0.6);
     width: 100%;
     height: 100%;
+    transition: background 0.2s;
 }
 
 .FootMenu {
@@ -393,25 +393,37 @@ a {
 
 @media (orientation: portrait) {
     .Project_1 {
-        height: 70px;
-        right: 130px;
+        height: 50px;
+        right: 20%;
     }
 
     #PROJECT_1 {
-        font-size: 35px;
-        margin-left: 160px;
+        font-size: 16px;
+        margin-left: 20%;
         margin-top: 10px;
     }
 
     .Project_2 {
-        height: 70px;
-        right: 130px;
+        height: 50px;
+        right: 20%;
     }
 
     #PROJECT_2 {
-        font-size: 35px;
-        margin-left: 160px;
+        font-size: 16px;
+        margin-left: 20%;
         margin-top: 10px;
+    }
+
+    .Footer {
+        top: 165%;
+    }
+
+    #FOOTER_WORD_1 {
+        font-size: 20px;
+    }
+
+    #FOOTER_WORD_2 {
+        font-size: 24px;
     }
 
     .Footer {
@@ -449,5 +461,6 @@ a {
     .FootMenu {
         font-size: 20px;
         margin: 0 20px 0 20px;
+        gap: 12%;
     }
 }
