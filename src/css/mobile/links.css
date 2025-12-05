@@ -1,5 +1,9 @@
 @import url("https://fontsapi.zeoseven.com/69/main/result.css");
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Noto Sans CJK", serif;
     font-weight: normal;
