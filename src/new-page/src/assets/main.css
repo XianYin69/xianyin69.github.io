@@ -1,0 +1,15 @@
+@import url("https://fontsapi.zeoseven.com/69/main/result.css");
+
+.headNavigator {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    font-size: 30px;
+}
+
+#word-background {
+    position: relative;
+    font-size: 144px;
+    font-weight: bold;
+    left: 1rem;
+}
