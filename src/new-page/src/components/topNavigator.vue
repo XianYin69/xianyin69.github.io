@@ -21,14 +21,15 @@
   background: #4286D9;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
   #Info {
-    transition: background 0.2s;
+    transition: background 300ms ease-in-out;
   }
   #Project {
-    transition: background 0.2s;
+    transition: background 300ms ease-in-out;
   }
   #Link {
-    transition: background 0.2s;
+    transition: background 300ms ease-in-out;
   }
 }
 

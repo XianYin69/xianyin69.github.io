@@ -29,7 +29,7 @@
   width: 100%;
   .tips {
     #tip {
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: bold;
       background: #AAD0F1;
       background-clip: text;
@@ -50,7 +50,7 @@
 }
 @media (max-width: 720px) {
   .buttonNavigator {
-    height: 6rem;
+    height: 2rem;
     font-size: 0.7rem;
     .tips {
       #tip {
