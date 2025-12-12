@@ -33,6 +33,7 @@ const currentComponent = computed(() => {
 </template>
 
 <style scoped>
+@import url("https://fontsapi.zeoseven.com/69/main/result.css");
 html, body {
   height: 100%;
   margin: 0;
@@ -58,7 +59,7 @@ html, body {
   -webkit-text-fill-color: transparent;
   position: absolute;
   bottom: 2rem;
-  left: 1rem;
+  left: 0.5rem;
   font-style: normal;
   font-weight: bolder;
 }

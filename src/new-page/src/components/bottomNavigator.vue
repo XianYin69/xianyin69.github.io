@@ -21,7 +21,6 @@
 </template>
 
 <style scoped>
-@import url("https://fontsapi.zeoseven.com/69/main/result.css");
 .buttonNavigator{
   position: relative;
   display: flex;
