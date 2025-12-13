@@ -48,7 +48,7 @@ import stateDes from "@/components/stateDes.vue"
   position: relative;
   top: -50%;
   right: -45%;
-  width: 4rem;
+  width: auto;
 }
 #stateDes {
   display: none;
