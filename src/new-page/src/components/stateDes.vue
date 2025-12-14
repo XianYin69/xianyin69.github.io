@@ -11,7 +11,7 @@
       </div>
       <div class="released">
         <div id="releasedColor"></div>
-        <p id="releasedWord">开发中</p>
+        <p id="releasedWord">已发布</p>
       </div>
       <div class="discard">
         <div id="discardColor"></div>

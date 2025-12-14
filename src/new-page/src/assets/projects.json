@@ -1,6 +1,20 @@
-{
-  "item" : {
-    "project": "",
-    "state": ""
+[
+  {
+    "id" : 1,
+    "project": "test-1",
+    "url": "#",
+    "state": "developing"
+  },
+  {
+    "id" : 2,
+    "project": "test-2",
+    "url": "#",
+    "state": "complete"
+  },
+  {
+    "id" : 3,
+    "project": "test-3",
+    "url": "#",
+    "state": "discard"
   }
-}
+]
