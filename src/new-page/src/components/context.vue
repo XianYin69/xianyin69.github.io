@@ -13,14 +13,14 @@ import sourceData from '@/assets/mainConten.json'
   position: relative;
   width: auto;
   height: auto;
-  background: #4280D9;
+  background: #48CAE4;
 }
 #content {
   position: relative;
   padding: 1rem;
   font-size: 2rem;
   white-space: pre-wrap;
-  background: #0016C4;
+  background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

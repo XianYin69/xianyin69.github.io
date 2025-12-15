@@ -1,6 +1,5 @@
 <script setup>
 import content from '@/components/context.vue'
-
 </script>
 
 <template>

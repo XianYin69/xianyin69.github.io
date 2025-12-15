@@ -5,13 +5,15 @@ const props = defineProps(['currentActive']);
 const emitChange = (pageName) => {
   emits('change-page', pageName);
 };
+import { useLang } from "@/lang.js";
+const { t, currentLang } = useLang();
 </script>
 
 <template>
   <div class="topNavigator">
-    <div id="Info" @click="emitChange('infoPage')" :class=" { active: currentActive === 'infoPage'}">首页</div>
-    <div id="Project" @click="emitChange('projectPage')" :class="{ active: currentActive === 'projectPage'}">项目</div>
-    <div id="Link" @click="emitChange('linkPage')" :class="{ active: currentActive === 'linkPage'}">链接</div>
+    <div id="Info" @click="emitChange('infoPage')" :class=" { active: currentActive === 'infoPage'}">{{ t('currentLang.home') }}</div>
+    <div id="Project" @click="emitChange('projectPage')" :class="{ active: currentActive === 'projectPage'}">{{ t('currentLang.project') }}</div>
+    <div id="Link" @click="emitChange('linkPage')" :class="{ active: currentActive === 'linkPage'}">{{ t('link') }}</div>
   </div>
 </template>
 
@@ -22,32 +24,32 @@ const emitChange = (pageName) => {
   flex-direction: row;
   gap: 10rem;
   font-size: 2rem;
-  background: #4286D9;
+  background: #ADE8F4;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
 #Info:hover {
-  background: #0016C4;
+  background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #Project:hover {
-  background: #0016C4;
+  background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #Link:hover {
-  background: #0016C4;
+  background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 720px) {
-  .topNavigator {
+  .topNavigator   {
     gap: 5rem;
     font-size: 2rem;
   }

@@ -47,14 +47,14 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
-  background: #AAD0F1;
+  background: #6CD5EA;
   width: 100%;
   height: 100%;
 }
 
 #backgroundWord {
   font-size: 10rem;
-  background-color: #E4F5FA;
+  background-color: #ADE8F4;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;

@@ -30,9 +30,11 @@ const props = defineProps({
 })
 //state 背景色
 const stateColorMap = {
-  'developing': '#FFC107',
-  'complete': '#4CAF50',
-  'discard': '#F44336',
+  'developing': '#F9C744',
+  'complete': '#90BE6D',
+  'discard': '#F77038',
+  'available': '#90BE6D',
+  'unavailable': '#F77038'
 }
 const stateBackgroundStyle = computed(() => {
   const currentState = props.itemData.state;
@@ -61,7 +63,7 @@ const stateBackgroundStyle = computed(() => {
 <style scoped>
 .item {
   position: relative;
-  left: 3rem;
+  left: 5rem;
   display: flex;
   flex-direction: row;
   height: 3rem;
@@ -70,14 +72,14 @@ const stateBackgroundStyle = computed(() => {
   font-weight: bold;
 }
 #state {
-  width: 21rem;
+  width: 15rem;
 }
 #item {
-  background: #4280D9;
-  width: 19rem;
+  background: #0096C7;
+  width: 32rem;
 }
 #itemID {
-  background: #AAD0F1;
+  background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -85,12 +87,12 @@ const stateBackgroundStyle = computed(() => {
   left: 5%;
 }
 #stateID {
-  background: #0016C4;
+  background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   top: -70%;
-  right: -45%;
+  left: 5%;
   width: auto;
 }
 </style>

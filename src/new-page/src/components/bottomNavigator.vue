@@ -27,13 +27,13 @@
   flex-direction: row;
   gap: 4rem;
   font-size: 1.3rem;
-  background: #4286D9;
+  background: #9FE4F2;
   width: 100%;
   .tips {
     #tip {
       font-size: 3rem;
       font-weight: bold;
-      background: #AAD0F1;
+      background: #FFFFFF;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       border-left: 0.2rem;
@@ -45,11 +45,13 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: #AAD0F1;
+    background: #0096C7;
     width: 100%;
     padding-left: 0.5rem;
     font-weight: bold;
     .github {
+      position: relative;
+      top: 0.2rem;
       display: flex;
       flex-direction: row;
       gap: 0.2rem;
@@ -68,12 +70,12 @@
       height: 2rem;
     }
     #XianYin69 {
-      background: #E4F5FA;
+      background: #FFFFFF;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     #email {
-      background: #E4F5FA;
+      background: #FFFFFF;
       background-clip: text;
       -webkit-text-fill-color: transparent;
   }
