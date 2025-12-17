@@ -51,6 +51,14 @@
         "url": "#",
         "state": "unavailable"
       }
+    ],
+    "languages": [
+      { "id": "zh",
+        "name": "中文"
+      },
+      { "id": "en",
+        "name": "English"
+      }
     ]
   },
   "en": {
@@ -104,6 +112,14 @@
         "link": "link-2",
         "url": "#",
         "state": "unavailable"
+      }
+    ],
+    "languages": [
+      { "id": "zh",
+        "name": "中文"
+      },
+      { "id": "en",
+        "name": "English"
       }
     ]
   }

@@ -1,13 +1,25 @@
 <script setup>
 import { useLang } from "@/lang.js";
 const { t } = useLang();
+import Lang from "@/components/lang.vue"
+import { ref } from "vue";
+const isLangOpen = ref(false);
+const toggleLang = () => {
+  isLangOpen.value = !isLangOpen.value;
+}
 </script>
 
 <template>
   <div class="buttonNavigator">
     <div class="tips">
       <p id="tip">{{ t( 'bottonNavigator.title' ) }}</p>
-      <img id = "moreLang" src="@/assets/more-lang.svg" alt="more-lang">
+      <div class="lang-control">
+        <img id = "moreLang" src="@/assets/more-lang.svg" alt="more-lang" @click="toggleLang">
+        <Lang
+            :show="isLangOpen"
+            @close="isLangOpen = false"
+        />
+      </div>
     </div>
     <div class="mediumMess">
       <div class="github">
@@ -31,6 +43,7 @@ const { t } = useLang();
   font-size: 1.3rem;
   background: #9FE4F2;
   width: 100%;
+  height: auto;
   .tips {
     #tip {
       font-size: 3rem;
@@ -40,6 +53,9 @@ const { t } = useLang();
       -webkit-text-fill-color: transparent;
       border-left: 0.2rem;
     }
+  }
+  .lang-control {
+    position: relative;
   }
   #moreLang {
     position: relative;

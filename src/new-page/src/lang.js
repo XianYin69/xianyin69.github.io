@@ -50,19 +50,19 @@ const allTranslations = translations
 
 /**
  * 设置新的应用语言，并保存到本地存储
- * @param {string} lang - 要设置的语言键
+ * @param {string} langId - 要设置的语言键
  */
-export function setLang(lang) {
+export function setLang(langId) {
     const defaultFallback = 'en';
 
-    if (allTranslations[lang]) {
-        currentLang.value = lang
+    if (allTranslations[langId]) {
+        currentLang.value = langId
         // 保存用户选择，实现持久化
-        localStorage.setItem('user-language', lang)
+        localStorage.setItem('user-language', langId)
     } else {
-        console.error(`尝试设置的语言键 '${lang}' 不存在，回退到 ${defaultFallback}。`)
+        console.error(`尝试设置的语言键 '${langId}' 不存在，回退到 ${defaultFallback}。`)
         currentLang.value = defaultFallback
-        localStorage.setItem('user-language', defaultFallback)
+        localStorage.setItem('user-language', langId)
     }
 }
 
@@ -72,7 +72,7 @@ export function setLang(lang) {
  */
 export function useLang() {
 
-    const t = computed(() => {
+    const t_computed = computed(() => {
         // 确保获取当前语言的文本对象
         const currentText = allTranslations[currentLang.value] || allTranslations['en']
 
@@ -94,10 +94,10 @@ export function useLang() {
             return text
         }
     })
-
+    const t = (keyPath) => t_computed.value(keyPath) //中转
     return {
-        // t.value 是一个函数，可以在组件模板中直接调用 t('key')
-        t: t.value,
+        // t_computed 是一个函数，可以在组件模板中直接调用 t('key')
+        t: t,
         currentLang // 响应式语言状态，用于显示当前语言或手动切换
     }
 }
