@@ -1,6 +1,6 @@
 // lang.js
 
-import { ref, computed, Ref } from 'vue'
+import { ref, computed } from 'vue'
 // 1. 静态导入所有翻译数据 (lang.json)
 import translations from '@/assets/lang.json'
 // 注意：请确保 '@assets/lang.json' 路径正确
@@ -69,7 +69,6 @@ export function setLang(lang) {
 
 /**
  * Vue 组合式函数：提供响应式的翻译和语言状态
- * @returns {{ t: Function, currentLang: Ref<string> }}
  */
 export function useLang() {
 

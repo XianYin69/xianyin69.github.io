@@ -7,71 +7,35 @@
       "project": "项目",
       "link": "链接"
     },
-    "projects": [
-      {
-        "id" : 1,
-        "project": "test-1",
-        "url": "#",
-        "state": "developing"
-      },
-      {
-        "id" : 2,
-        "project": "test-2",
-        "url": "#",
-        "state": "complete"
-      },
-      {
-        "id" : 3,
-        "project": "test-3",
-        "url": "#",
-        "state": "discard"
-      }
-    ],
-    "links": [
-      {
-        "id": 1,
-        "link": "link-1",
-        "url": "#",
-        "state": "available"
-      },
-      {
-        "id": 2,
-        "link": "link-2",
-        "url": "#",
-        "state": "unavailable"
-      }
-    ],
-    "buttonNavigator": {
+    "bottonNavigator": {
       "title": "更多",
       "github": "Github:XianYin69",
       "email": "电子邮箱:www324608yf@outlook.com"
-    }
-  },
-  "en": {
-    "web-title": "XianYin69's web",
-    "topNavigator": {
-      "home": "Home",
-      "project": "Projects",
-      "link": "Links"
     },
     "projects": [
       {
-        "id" : 1,
+        "id": 1,
         "project": "test-1",
         "url": "#",
         "state": "developing"
       },
       {
-        "id" : 2,
+        "id": 2,
         "project": "test-2",
         "url": "#",
         "state": "complete"
       },
       {
-        "id" : 3,
+        "id": 3,
         "project": "test-3",
         "url": "#",
         "state": "discard"
+      },
+      {
+        "id": 4,
+        "project": "test-4",
+        "url": "#",
+        "state": "testing"
       }
     ],
     "links": [
@@ -87,11 +51,60 @@
         "url": "#",
         "state": "unavailable"
       }
-    ],
-    "buttonNavigator": {
+    ]
+  },
+  "en": {
+    "web-title": "XianYin69-website",
+    "content": "A <b>stupid</b> ,Lazy guy and stay at home!\nA <b>Baka</b> !\nA <b>Magician</b> !\nA <b>Lonely</b> cooperator！",
+    "topNavigator": {
+      "home": "Home",
+      "project": "Project",
+      "link": "Link"
+    },
+    "bottonNavigator": {
       "title": "More",
       "github": "Github:XianYin69",
-      "email": "E-mail:www324608yf@outlook.com"
-    }
+      "email": "e-mail:www324608yf@outlook.com"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "project": "test-1",
+        "url": "#",
+        "state": "developing"
+      },
+      {
+        "id": 2,
+        "project": "test-2",
+        "url": "#",
+        "state": "complete"
+      },
+      {
+        "id": 3,
+        "project": "test-3",
+        "url": "#",
+        "state": "discard"
+      },
+      {
+        "id": 4,
+        "project": "test-4",
+        "url": "#",
+        "state": "testing"
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "link": "link-1",
+        "url": "#",
+        "state": "available"
+      },
+      {
+        "id": 2,
+        "link": "link-2",
+        "url": "#",
+        "state": "unavailable"
+      }
+    ]
   }
 }

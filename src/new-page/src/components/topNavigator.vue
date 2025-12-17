@@ -6,14 +6,14 @@ const emitChange = (pageName) => {
   emits('change-page', pageName);
 };
 import { useLang } from "@/lang.js";
-const { t, currentLang } = useLang();
+const { t } = useLang();
 </script>
 
 <template>
   <div class="topNavigator">
-    <div id="Info" @click="emitChange('infoPage')" :class=" { active: currentActive === 'infoPage'}">{{ t('currentLang.home') }}</div>
-    <div id="Project" @click="emitChange('projectPage')" :class="{ active: currentActive === 'projectPage'}">{{ t('currentLang.project') }}</div>
-    <div id="Link" @click="emitChange('linkPage')" :class="{ active: currentActive === 'linkPage'}">{{ t('link') }}</div>
+    <div id="Info" @click="emitChange('infoPage')" :class=" { active: currentActive === 'infoPage'}">{{ t('topNavigator.home') }}</div>
+    <div id="Project" @click="emitChange('projectPage')" :class="{ active: currentActive === 'projectPage'}">{{ t('topNavigator.project') }}</div>
+    <div id="Link" @click="emitChange('linkPage')" :class="{ active: currentActive === 'linkPage'}">{{ t('topNavigator.link') }}</div>
   </div>
 </template>
 

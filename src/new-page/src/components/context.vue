@@ -1,10 +1,11 @@
 <script setup>
-import sourceData from '@/assets/mainConten.json'
+import { useLang } from "@/lang.js";
+const { t } = useLang();
 </script>
 
 <template>
   <div class="content">
-    <div id="content" v-html="sourceData.content"></div>
+    <div id="content" v-html="t('content')"></div>
   </div>
 </template>
 

@@ -1,20 +1,22 @@
-<script>
-
+<script setup>
+import { useLang } from "@/lang.js";
+const { t } = useLang();
 </script>
 
 <template>
   <div class="buttonNavigator">
     <div class="tips">
-      <p id="tip">更多</p>
+      <p id="tip">{{ t( 'bottonNavigator.title' ) }}</p>
+      <img id = "moreLang" src="@/assets/more-lang.svg" alt="more-lang">
     </div>
     <div class="mediumMess">
       <div class="github">
         <img id="github" src="@/assets/github.svg" alt="github">
-        <a id = "XianYin69" href="https://github.com/xianyin69">Github:XianYin69</a>
+        <a id = "XianYin69" href="https://github.com/xianyin69">{{ t( 'bottonNavigator.github' ) }}</a>
       </div>
       <div class="email">
         <img id="Email" src="@/assets/email.svg" alt="email">
-        <a id = "email" href="mailto:www324608yf@outlook.com">电子邮箱：www324608yf@outlook.com</a>
+        <a id = "email" href="mailto:www324608yf@outlook.com">{{ t('bottonNavigator.email') }}</a>
       </div>
     </div>
   </div>
@@ -39,7 +41,11 @@
       border-left: 0.2rem;
     }
   }
-
+  #moreLang {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
   .mediumMess {
     position: relative;
     display: flex;

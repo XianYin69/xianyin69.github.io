@@ -34,7 +34,14 @@ const stateColorMap = {
   'complete': '#90BE6D',
   'discard': '#F77038',
   'available': '#90BE6D',
-  'unavailable': '#F77038'
+  'unavailable': '#F77038',
+  'testing': '#5986B0',
+  '开发中': '#F9C744',
+  '已发布': '#90BE6D',
+  '已废弃': '#F77038',
+  '可用': '#90BE6D',
+  '不可用': '#F77038',
+  '测试中': '#5986B0'
 }
 const stateBackgroundStyle = computed(() => {
   const currentState = props.itemData.state;
