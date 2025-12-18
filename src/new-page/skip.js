@@ -1,25 +1,21 @@
-//浏览器检测
-function isBrowserCompatible() {
-    return typeof Promise !== 'undefined' && typeof Proxy !== 'undefined';
-}
-//采集信息
-function collectUserInfo() {
-    return {
-        userAgent: navigator.userAgent || 'N/A',
-        userLanguage: navigator.language || 'N/A',
-        width: window.screen.width,
-        height: window.screen.height,
-        pageBrowsing: window.location.href
+(function () {
+    function collectUserInfo() {
+        return {
+            userAgent: navigator.userAgent || 'N/A'
+        }
     }
-}
-//功能检测
- function checkCapabilities(upgradeUrl) {
-    if (isBrowserCompatible()) {
-        return;
+
+    function supportES2016 () {
+        try {
+            eval("2**3");
+            return typeof Array.prototype.includes === 'function';
+        } catch (e) {
+            return false;
+        }
     }
     const userInfo = collectUserInfo()
-     if (upgradeUrl) {
-         window.location.href = upgradeUrl;
-     }
- }
- export default checkCapabilities;
+    if (!supportES2016()) {
+        console.warn("Worried Browser:", userInfo.userAgent);
+        window.location.href = './src/old/bowShit.html'
+    }
+})();

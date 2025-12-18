@@ -95,11 +95,13 @@ const toggleLang = () => {
       background: #FFFFFF;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-decoration-line: none;
     }
     #email {
       background: #FFFFFF;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-decoration-line: none;
   }
   }
 

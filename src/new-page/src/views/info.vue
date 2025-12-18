@@ -34,11 +34,4 @@ import content from '@/components/context.vue'
     position: relative;
   }
 }
-
-@media (max-width: 720px) {
-  img {
-    width: 5rem;
-    height: 5rem;
-  }
-}
 </style>

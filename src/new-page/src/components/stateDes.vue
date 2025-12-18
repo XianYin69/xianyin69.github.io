@@ -1,5 +1,6 @@
 <script setup>
-
+import { useLang } from "@/lang.js";
+const { t } = useLang()
 </script>
 
 <template>
@@ -7,29 +8,29 @@
     <div class="line1">
       <div class="inProcess">
         <div id="inProColor"></div>
-        <p id="inProWord">开发中</p>
+        <p id="inProWord">{{t('stateDes.inProcess')}}</p>
       </div>
       <div class="released">
         <div id="releasedColor"></div>
-        <p id="releasedWord">已发布</p>
+        <p id="releasedWord">{{t('stateDes.released')}}</p>
       </div>
       <div class="discard">
         <div id="discardColor"></div>
-        <p id="discardWord">已废弃</p>
+        <p id="discardWord">{{ t('stateDes.discord') }}</p>
       </div>
       <div class="testing">
         <div id="testingColor"></div>
-        <p id="testingWord">测试中</p>
+        <p id="testingWord">{{ t('stateDes.Testing') }}</p>
       </div>
     </div>
     <div class="line2">
       <div class="available">
         <div id="availableColor"></div>
-        <p id="availableWord">可用</p>
+        <p id="availableWord">{{ t('stateDes.available') }}</p>
       </div>
       <div class="unavailable">
         <div id="unavailableColor"></div>
-        <p id="unavailableWord">不可用</p>
+        <p id="unavailableWord">{{ t('stateDes.unavailable') }}</p>
       </div>
     </div>
   </div>

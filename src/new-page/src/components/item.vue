@@ -92,6 +92,7 @@ const stateBackgroundStyle = computed(() => {
   position: relative;
   top: 5%;
   left: 5%;
+  text-decoration-line: none;
 }
 #stateID {
   background: #FFFFFF;

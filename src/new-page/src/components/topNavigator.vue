@@ -48,10 +48,11 @@ const { t } = useLang();
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 720px) {
-  .topNavigator   {
-    gap: 5rem;
-    font-size: 2rem;
-  }
+.active {
+  font-size: 2.3rem;
+  background: #FFFFFF;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 </style>
