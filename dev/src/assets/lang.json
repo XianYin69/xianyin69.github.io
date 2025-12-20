@@ -1,0 +1,122 @@
+{
+  "zh": {
+    "content": "这是一位 <b>神人</b> ，懒癌晚期患者兼阿宅！\n一位很⑨的 <b>大笨蛋</b> ！\n一个 <b>大</b> 魔法师！\n和这人合作的人 <b>都</b> 很不幸！",
+    "topNavigator": {
+      "home": "首页",
+      "project": "项目",
+      "link": "链接"
+    },
+    "bottonNavigator": {
+      "title": "更多",
+      "github": "Github:XianYin69",
+      "email": "电子邮箱:www324608yf@outlook.com"
+    },
+    "languages": [
+      { "id": "en",
+        "name": "English"
+      },
+      { "id": "zh",
+        "name": "中文（简体）"
+      },
+      { "id": "zh-TW",
+        "name": "國語"
+      }
+    ],
+    "projectState": {
+      "developing": "开发中",
+      "discord": "已废弃",
+      "released": "已发布",
+      "testing": "测试中",
+      "available": "可用",
+      "unavailable": "不可用"
+    },
+    "stateDes": {
+      "inProcess": "开发中",
+      "discord": "已废弃",
+      "released": "已发布",
+      "testing": "测试中",
+      "available": "可用",
+      "unavailable": "不可用"
+    }
+  },
+  "en": {
+    "content": "A <b>stupid</b> ,Lazy guy and stay at home!\nA <b>Baka</b> !\nA <b>Magician</b> !\nA <b>Lonely</b> cooperator！",
+    "topNavigator": {
+      "home": "Home",
+      "project": "Project",
+      "link": "Link"
+    },
+    "bottonNavigator": {
+      "title": "More",
+      "github": "Github:XianYin69",
+      "email": "e-mail:www324608yf@outlook.com"
+    },
+    "languages": [
+      { "id": "en",
+        "name": "English"
+      },
+      { "id": "zh",
+        "name": "中文（简体）"
+      },
+      { "id": "zh-TW",
+        "name": "國語"
+      }
+    ],
+    "projectState": {
+      "developing": "Developing",
+      "discord": "Discorded",
+      "released": "Released",
+      "testing": "Testing",
+      "available": "available",
+      "unavailable": "unavailable"
+    },
+    "stateDes": {
+      "inProcess": "Developing",
+      "discord": "Discord",
+      "released": "Released",
+      "testing": "Testing",
+      "available": "Available",
+      "unavailable": "Unavailable"
+    }
+  },
+  "zh-TW": {
+    "content": "一位 <b>菜鳥</b> 兼死肥宅!\n一位 <b>白癡</b> !\n一位 <b>魔術師</b> !\n一位 <b>孤獨的</b> 合作者！",
+    "topNavigator": {
+      "home": "主頁",
+      "project": "項目",
+      "link": "鏈接"
+    },
+    "bottonNavigator": {
+      "title": "更多",
+      "github": "Github:XianYin69",
+      "email": "e-mail:www324608yf@outlook.com"
+    },
+    "languages": [
+      { "id": "en",
+        "name": "English"
+      },
+      { "id": "zh",
+        "name": "中文（简体）"
+      },
+      { "id": "zh-TW",
+        "name": "國語"
+      }
+    ],
+    "projectState": {
+      "developing": "正在開發",
+      "discord": "廢除",
+      "released": "已經發表",
+      "testing": "正在調試",
+      "available": "使用中",
+      "unavailable": "停止使用"
+    },
+    "stateDes": {
+      "inProcess": "正在開發",
+      "discord": "廢除",
+      "released": "已經發表",
+      "testing": "正在調試",
+      "available": "使用中",
+      "unavailable": "停止使用"
+    }
+  }
+}
