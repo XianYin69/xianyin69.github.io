@@ -1,6 +1,16 @@
 <script setup>
 import item from "@/components/item.vue"
-import items from "@/assets/link.json"
+import {onMounted, ref} from 'vue'
+const items = ref([])
+onMounted(async () => {
+  try {
+    const response = await fetch('/links.json')
+    if (!response.ok) throw new Error(response.error)
+    items.value = await response.json()
+  } catch (error) {
+    console.error("Loading error")
+  }
+})
 </script>
 
 <template>

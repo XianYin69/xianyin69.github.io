@@ -24,10 +24,11 @@ const { t } = useLang();
   flex-direction: row;
   gap: 10rem;
   font-size: 2rem;
-  background: #ADE8F4;
+  background: #0096C7;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transition: background 0.2s, font-size 0.2s;
 }
 
 #Info:hover {
@@ -49,7 +50,7 @@ const { t } = useLang();
 }
 
 .active {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   background: #FFFFFF;
   background-clip: text;
   -webkit-text-fill-color: transparent;
