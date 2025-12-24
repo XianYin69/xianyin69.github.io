@@ -63,9 +63,4 @@ html, body {
   font-style: normal;
   font-weight: bolder;
 }
-@media (max-width: 720px) {
-  #backgroundWord {
-    font-size: 5rem;
-  }
-}
 </style>

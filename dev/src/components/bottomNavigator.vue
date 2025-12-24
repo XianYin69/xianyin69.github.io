@@ -13,12 +13,14 @@ const toggleLang = () => {
   <div class="buttonNavigator">
     <div class="tips">
       <p id="tip">{{ t( 'bottonNavigator.title' ) }}</p>
-      <div class="lang-control">
-        <img id = "moreLang" src="../assets/more-lang.svg" alt="more-lang" @click="toggleLang">
-        <Lang
-            :show="isLangOpen"
-            @close="isLangOpen = false"
-        />
+      <div class="moreOpt">
+        <div class="lang-control">
+          <img id = "moreLang" src="../assets/more-lang.svg" alt="more-lang" @click="toggleLang">
+          <Lang
+              :show="isLangOpen"
+              @close="isLangOpen = false"
+          />
+        </div>
       </div>
     </div>
     <div class="mediumMess">
@@ -54,13 +56,19 @@ const toggleLang = () => {
       border-left: 0.2rem;
     }
   }
-  .lang-control {
+  .moreOpt {
     position: relative;
-  }
-  #moreLang {
-    position: relative;
-    width: 2rem;
-    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    .lang-control {
+      position: relative;
+    }
+    #moreLang {
+      position: relative;
+      width: 2rem;
+      height: 2rem;
+    }
   }
   .mediumMess {
     position: relative;
@@ -105,16 +113,5 @@ const toggleLang = () => {
   }
   }
 
-}
-@media (max-width: 720px) {
-  .buttonNavigator {
-    height: 4rem;
-    font-size: 0.7rem;
-    .tips {
-      #tip {
-        font-size: 1rem;
-      }
-    }
-  }
 }
 </style>

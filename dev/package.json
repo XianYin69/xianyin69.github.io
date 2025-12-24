@@ -1,15 +1,15 @@
 {
-  "name": "new-page",
-  "version": "0.0.0",
-  "private": true,
+  "name": "xian-yin-69-new-page",
+  "version": "0.0.1",
+  "private": false,
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
-    "dev": "../node_modules/.bin/vite",
-    "build": "../node_modules/.bin/vite build",
-    "preview": "../node_modules/.bin/vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.5.25"
