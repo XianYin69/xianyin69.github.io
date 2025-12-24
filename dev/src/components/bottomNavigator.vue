@@ -7,7 +7,6 @@ const isLangOpen = ref(false);
 const toggleLang = () => {
   isLangOpen.value = !isLangOpen.value;
 }
-import DarkMode from "@/components/dark-mode.vue";
 </script>
 
 <template>
@@ -21,9 +20,6 @@ import DarkMode from "@/components/dark-mode.vue";
               :show="isLangOpen"
               @close="isLangOpen = false"
           />
-        </div>
-        <div id = "mode-switcher">
-          <DarkMode />
         </div>
       </div>
     </div>
