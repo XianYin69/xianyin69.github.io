@@ -16,6 +16,6 @@
     const userInfo = collectUserInfo()
     if (!supportES2016()) {
         console.warn("Worried Browser:", userInfo.userAgent);
-        window.location.href = '../src/old/bowShit.html'
+        window.location.href = './old/endSupport.html'
     }
 })();
