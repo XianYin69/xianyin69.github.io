@@ -11,7 +11,12 @@
   },
   {
     "id": "LeetCode solution",
-    "url": "https://github.com/XianYin69/CN_Solutions_for_LeetCode/blob/main/README.md",
+    "url": "https://github.com/XianYin69/CN_Solutions_for_LeetCode",
+    "state": "developing"
+  },
+  {
+    "id": "OfficePlus",
+    "url": "https://github.com/XianYin69/OfficePlus",
     "state": "developing"
   }
 ]
