@@ -18,5 +18,10 @@
     "id": "SuperSpace",
     "url": "https://github.com/XianYin69/OfficePlus",
     "state": "released"
+  },
+  {
+    "id": "EasyDev",
+    "url": "https://github.com/XianYin69/EasyDev",
+    "state": "developing"
   }
 ]
