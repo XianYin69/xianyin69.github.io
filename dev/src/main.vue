@@ -25,7 +25,6 @@ const currentComponent = computed(() => {
 
 <template>
   <div class="main">
-    <p id="backgroundWord">XianYin69</p>
     <topNavigator @change-page="changePage" :current-active="currentPageName"/>
     <component :is="currentComponent"></component>
     <BottomNavigator />
@@ -39,6 +38,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 .main {
   display: flex;
@@ -47,20 +47,10 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
-  background: #6CD5EA;
   width: 100%;
   height: 100%;
+  background:url('@/assets/background.svg') no-repeat fixed center center;
+  background-size: cover;
 }
 
-#backgroundWord {
-  font-size: 10rem;
-  background-color: #ADE8F4;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  bottom: 2rem;
-  left: 0.5rem;
-  font-style: normal;
-  font-weight: bolder;
-}
 </style>

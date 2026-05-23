@@ -12,7 +12,6 @@ const toggleLang = () => {
 <template>
   <div class="buttonNavigator">
     <div class="tips">
-      <p id="tip">{{ t( 'bottonNavigator.title' ) }}</p>
       <div class="moreOpt">
         <div class="lang-control">
           <img id = "moreLang" src="../assets/more-lang.svg" alt="more-lang" @click="toggleLang">
@@ -47,14 +46,6 @@ const toggleLang = () => {
   width: 100%;
   height: auto;
   .tips {
-    #tip {
-      font-size: 3rem;
-      font-weight: bold;
-      background: #FFFFFF;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border-left: 0.2rem;
-    }
   }
   .moreOpt {
     position: relative;
