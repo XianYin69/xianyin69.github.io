@@ -25,11 +25,12 @@ const props = defineProps({
   height: 3rem;
   font-size: 2rem;
   font-weight: bold;
-  background: #0096C7;
-  width: 12rem;
+  background: url("@/assets/background-buttom.svg") no-repeat center center;
+  background-size: 100% 100%;
+  width: auto;
 }
 .lang-box {
-  width: 12rem;
+  width: auto;
 }
 .lang-title {
   background: #FFFFFF;
@@ -37,6 +38,6 @@ const props = defineProps({
   -webkit-text-fill-color: transparent;
   position: relative;
   top: 5%;
-  left: 5%;
+  left: 9%;
 }
 </style>

@@ -1,6 +1,6 @@
 <script setup>
 //状态说明
-import stateDes from "@/components/stateDes.vue"
+import InfoDes from "@/components/InfoDes.vue"
 import { ref,computed } from 'vue'
 const isHoveringState = ref(false)
 let hoverTimeout = null;
@@ -48,14 +48,8 @@ const { t } = useLang();
     <div id="item">
       <a id="itemID" :href="props.itemData.url">{{ itemData.id }}</a>
     </div>
-    <div id="state"
-         :style="stateBackgroundStyle"
-         @mouseenter="handleMouseEnter"
-         @mouseleave="handleMouseLeave">
-      <p id="stateID">{{ t('projectState.' + itemData.state) }}</p>
-    </div>
   </div>
-  <stateDes id="stateDes" v-if="isHoveringState"/>
+  <InfoDes id="stateDes" v-if="isHoveringState"/>
 </template>
 
 <style scoped>
@@ -65,17 +59,16 @@ const { t } = useLang();
   display: flex;
   flex-direction: row;
   height: 3rem;
-  width: 42rem;
+  width: 40rem;
   font-size: 2rem;
   font-weight: bold;
   transition: width 0.2s, height 0.2s, font-weight 0.2s;
 }
-#state {
-  width: 15rem;
-}
+
 #item {
-  background: #0096C7;
-  width: 32rem;
+  background: url("@/assets/background-buttom.svg") no-repeat center center;
+  background-size: 100% 100%;
+  width: 40rem;
 }
 #itemID {
   background: #FFFFFF;
@@ -86,18 +79,9 @@ const { t } = useLang();
   left: 5%;
   text-decoration-line: none;
 }
-#stateID {
-  background: #FFFFFF;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  top: -70%;
-  left: 5%;
-  width: auto;
+
+div:hover {
+
 }
-.item:hover {
-  height: 3.7rem;
-  width: 47rem;
-  font-size: 2.5rem;
-}
+
 </style>

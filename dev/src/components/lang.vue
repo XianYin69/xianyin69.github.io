@@ -46,24 +46,25 @@ const closeMenu = () => {
   bottom: 4rem;
   left: 2rem;
   gap: 1rem;
-  background: #0077B6;
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
   width: 40rem;
   height: auto;
   z-index: 99;
 }
 .close-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   position: relative;
   top: 0.5rem;
-  left: 37rem;
+  left: 35.5rem;
 }
 .menu {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  bottom: 0.2rem;
+  bottom: 1rem;
   width: 30rem;
   left: 5rem;
 }

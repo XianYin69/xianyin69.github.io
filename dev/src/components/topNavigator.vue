@@ -26,7 +26,7 @@ const { t } = useLang();
   display: flex;
   align-items: center;
   background: url("@/assets/background-top-navigator.svg") no-repeat left center;
-  background-size: cover;
+  background-size: 100% 100%;
 
   position: relative;
 }
@@ -58,7 +58,7 @@ const { t } = useLang();
 
 .active {
   font-size: 1.75rem !important;
-  color: #0cf1f1 !important;
+  color: #06dfdf !important;
   transform: translateY(-2px) scale(1.08);
   text-shadow: 0 0 15px rgb(167 251 249), 0 0 2px rgba(255, 255, 255, 1);
   position: relative;
@@ -71,7 +71,7 @@ const { t } = useLang();
   left: 10%;
   width: 80%;
   height: 4px;
-  background: linear-gradient(90deg, #56eafa, #00f5ff);
+  background: linear-gradient(90deg, #08dfdf, #00f5ff);
   border-radius: 2px;
   box-shadow: 0 0 8px #61edff;
 }
