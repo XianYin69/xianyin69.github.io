@@ -4,7 +4,8 @@
     "topNavigator": {
       "project": "项目",
       "link": "链接",
-      "info": "个人简介"
+      "info": "个人简介",
+      "blog": "个人博客"
     },
     "bottonNavigator": {
       "title": "更多",
@@ -30,6 +31,7 @@
       "available": "可用",
       "unavailable": "不可用"
     },
+    "Status": "状态",
     "stateDes": {
       "inProcess": "开发中",
       "discord": "已废弃",

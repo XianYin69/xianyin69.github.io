@@ -1,36 +1,40 @@
 <script setup>
 import { useLang } from "@/lang.js";
 const { t } = useLang()
+
+const props = defineProps({
+  itemData: {
+    type: Object,
+    required: true
+  }
+});
+
+import { ref } from "vue";
+const isShowURL1 = ref(true);
+const isShowURL2 = ref(false);
+const isShowURL3 = ref(false);
+const isShowNote1 = ref(true);
 </script>
 
 <template>
   <div class="stateDes">
     <div class="line1">
-      <div class="inProcess">
-        <div id="inProColor"></div>
-        <p id="inProWord">{{t('stateDes.inProcess')}}</p>
-      </div>
-      <div class="released">
-        <div id="releasedColor"></div>
-        <p id="releasedWord">{{t('stateDes.released')}}</p>
-      </div>
-      <div class="discard">
-        <div id="discardColor"></div>
-        <p id="discardWord">{{ t('stateDes.discord') }}</p>
-      </div>
-      <div class="testing">
-        <div id="testingColor"></div>
-        <p id="testingWord">{{ t('stateDes.testing') }}</p>
+      <div class="status">
+        <a id="status">{{ t("itemData.Status") }}</a>
+        <a id="statusDes">{{ t("itemData.statusLevel") }}</a>
+        <div id="color-status"></div>
       </div>
     </div>
     <div class="line2">
-      <div class="available">
-        <div id="availableColor"></div>
-        <p id="availableWord">{{ t('stateDes.available') }}</p>
+      <div class="url">
+        <a id="url-1" v-if="isShowURL1">url:{{ t("itemData.Url1") }}</a>
+        <a id="url-2" v-if="isShowURL2">url:{{ t("itemData.Url2") }}</a>
+        <a id="url-3" v-if="isShowURL3">url:{{ t("itemData.Url3") }}</a>
       </div>
-      <div class="unavailable">
-        <div id="unavailableColor"></div>
-        <p id="unavailableWord">{{ t('stateDes.unavailable') }}</p>
+    </div>
+    <div class="line3">
+      <div class="Note">
+        <a id="note-1" v-if="isShowNote1">{{ t("itemData.Note") }}</a>
       </div>
     </div>
   </div>
@@ -38,133 +42,66 @@ const { t } = useLang()
 
 <style scoped>
 .stateDes {
-  width: 32rem;
+  width: 30rem;
   height: auto;
   position: relative;
-  left: 20rem;
-  top: 0.2rem;
-  background: #9FE4F2;
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
+  left: 8rem;
 }
 .line1 {
+  left: 1rem;
+  width: 10rem;
+  height: auto;
+  position: relative;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-  position: relative;
-  left: 0.5rem;
-  top: 0.5rem;
+  gap: 0.5rem;
 }
+
+.status {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
 .line2 {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  left: 1rem;
+  width: 10rem;
+  height: auto;
   position: relative;
-  left: 0.5rem;
-  top: 0.5rem;
-}
-.inProcess {
   display: flex;
   flex-direction: row;
-  gap: 0.2rem;
-  #inProColor {
-    background: #F9C744;
-    width: 2rem;
-    height: 2rem;
-  }
-  #inProWord {
-    background: #FFFFFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -0.6rem;
-  }
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
-.released {
+
+.line3 {
+  left: 1rem;
+  width: 10rem;
+  height: auto;
+  position: relative;
   display: flex;
   flex-direction: row;
-  gap: 0.2rem;
-  #releasedColor {
-    background: #90BE6D;
-    width: 2rem;
-    height: 2rem;
-  }
-  #releasedWord {
-    background: #FFFFFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -0.6rem;
-  }
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
-.discard {
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
-  #discardColor {
-    background: #F77038;
-    width: 2rem;
-    height: 2rem;
-  }
-  #discardWord {
-    background: #FFFFFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -0.6rem;
-  }
+
+a {
+  font-size: 1rem;
+  font-weight: normal;
+  background: #0077b6;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.testing {
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
-  #testingColor {
-    background: #5086B0;
-    width: 2rem;
-    height: 2rem;
-  }
-  #testingWord {
-    background: #FFFFFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -0.6rem;
-  }
-}
-.available {
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
-  #availableColor {
-    background: #90BE6D;
-    width: 2rem;
-    height: 2rem;
-  }
-  #availableWord {
-    background: #FFFFFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -0.6rem;
-  }
-}
-.unavailable {
-  display: flex;
-  flex-direction: row;
-  padding-left: 0.9rem;
-  gap: 0.2rem;
-  #unavailableColor {
-    background: #F77038;
-    width: 2rem;
-    height: 2rem;
-  }
-  #unavailableWord {
-    background: #FFFFFF;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    top: -0.6rem;
-  }
+
+#color-status {
+  width: 2rem;
+  height: 1rem;
+  background: #90be6d;
+  margin-top: 1rem;
 }
 </style>

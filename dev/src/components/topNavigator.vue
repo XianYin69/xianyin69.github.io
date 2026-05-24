@@ -12,6 +12,7 @@ const { t } = useLang();
 <template>
   <nav class="top-nav-container">
     <div class="topNavigator">
+      <div id="Blog" @click="emitChange('blogPage')" :class="{ active: currentActive === 'blogPage' }" >{{ t('topNavigator.blog')}}</div>
       <div id="Project" @click="emitChange('projectPage')" :class="{ active: currentActive === 'projectPage'}">{{ t('topNavigator.project') }}</div>
       <div id="Link" @click="emitChange('linkPage')" :class="{ active: currentActive === 'linkPage'}">{{ t('topNavigator.link') }}</div>
       <div id="Info" @click="emitChange('infoPage')" :class="{ active: currentActive === 'infoPage'}">{{ t('topNavigator.info') }}</div>

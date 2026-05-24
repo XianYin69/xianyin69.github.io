@@ -1,87 +1,62 @@
 <script setup>
 //状态说明
 import InfoDes from "@/components/InfoDes.vue"
-import { ref,computed } from 'vue'
-const isHoveringState = ref(false)
-let hoverTimeout = null;
-const HOVER_DELAY = 1000;
-const handleMouseEnter = () => {
-  if (hoverTimeout) {
-    clearTimeout(hoverTimeout);
-  }
-  hoverTimeout = setTimeout(() => {
-    isHoveringState.value = true
-  }, HOVER_DELAY);
-};
-const handleMouseLeave = () => {
-  if (hoverTimeout) {
-    clearTimeout(hoverTimeout);
-    hoverTimeout = null;
-  }
-  isHoveringState.value = false
-}
+import {ref} from "vue";
+const isShow = ref(false);
+
 //状态
 const props = defineProps(['itemData'])
-//state 背景色
-const stateColorMap = {
-  'developing': '#F9C744',
-  'released': '#90BE6D',
-  'discord': '#F77038',
-  'available': '#90BE6D',
-  'unavailable': '#F77038',
-  'testing': '#5986B0'
-}
-const stateBackgroundStyle = computed(() => {
-  const currentState = props.itemData.state;
-  const background = stateColorMap[currentState];
-  return {
-    background: background
-  };
-});
-//翻译
-import { useLang } from "@/lang.js";
-const { t } = useLang();
 </script>
 
 <template>
-  <div class="item">
-    <div id="item">
-      <a id="itemID" :href="props.itemData.url">{{ itemData.id }}</a>
-    </div>
+  <div class="item" >
+    <a id="itemID" :href="props.itemData.url">{{ itemData.id }}</a>
+    <div id="show" :class="{ 'is-open': isShow}" @click="isShow = !isShow"></div>
   </div>
-  <InfoDes id="stateDes" v-if="isHoveringState"/>
+  <InfoDes v-if="isShow" :itemData="itemData"/>
 </template>
 
 <style scoped>
 .item {
   position: relative;
-  left: 5rem;
-  display: flex;
-  flex-direction: row;
+  left: 7rem;
   height: 3rem;
   width: 40rem;
   font-size: 2rem;
   font-weight: bold;
   transition: width 0.2s, height 0.2s, font-weight 0.2s;
+  display: flex;
+  flex-direction: row;
+
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
-#item {
-  background: url("@/assets/background-buttom.svg") no-repeat center center;
-  background-size: 100% 100%;
-  width: 40rem;
-}
 #itemID {
-  background: #FFFFFF;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.75rem !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) scale(1.08);
+  text-shadow: 0 0 15px rgb(8 205 201), 0 0 2px rgb(149 149 149);
   position: relative;
-  top: 5%;
+  top: 2%;
   left: 5%;
   text-decoration-line: none;
 }
 
-div:hover {
+#show {
+  width: 2rem;
+  height: 2rem;
+  background: url("@/assets/notShow.svg") no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
 
+#show.is-open {
+  background: url("@/assets/isShow.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 </style>
