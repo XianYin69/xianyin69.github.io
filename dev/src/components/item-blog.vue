@@ -71,7 +71,6 @@
 }
 
 #blog-title {
-  margin-left: 1rem;
   font-weight: bolder;
 }
 
@@ -83,9 +82,15 @@
   width: 100%;
 }
 
+#img-blog-editor {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  background: url("@/assets/blog/blog-editor.svg") no-repeat center center;
+  background-size: 100% 100%;
+}
 
 #blog-editor {
-  margin-left: 2rem;
   font-weight: bold;
 }
 
@@ -95,10 +100,18 @@
   gap: 0.2rem;
   height: auto;
   width: 100%;
+  margin-bottom: 0.2rem;
+}
+
+#img-blog-time {
+  width: 2rem;
+  height: 2rem;
+  background: url("@/assets/blog/blog-time.svg") no-repeat center center;
+  background-size: 100% 100%;
+  margin-left: 1rem;
 }
 
 #blog-time {
-  margin-left: 3rem;
   font-style: italic;
 }
 </style>
