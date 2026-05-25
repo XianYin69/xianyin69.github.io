@@ -24,17 +24,41 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.25417602"
-     inkscape:cx="853.73907"
-     inkscape:cy="1209.7915"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="40"
+     inkscape:zoom="0.50835204"
+     inkscape:cx="1697.6424"
+     inkscape:cy="1700.5932"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="61"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient3"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:0.44298197;"
+         offset="0"
+         id="stop3" />
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:0;"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:0;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
     <linearGradient
        id="linearGradient15"
        inkscape:collect="always">
@@ -104,6 +128,37 @@
        r="365.3718"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.427629,0.05137313,-0.0488052,1.3562677,296.2023,141.81166)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3"
+       id="linearGradient4"
+       x1="366.36938"
+       y1="645.3421"
+       x2="396.19138"
+       y2="604.74524"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="radialGradient1"
+       cx="396.86035"
+       cy="97.821442"
+       fx="396.86035"
+       fy="97.821442"
+       r="144.19832"
+       gradientTransform="matrix(-0.58671609,0.64172223,-0.942374,-0.86159708,721.88909,-17.372506)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="radialGradient1-4"
+       cx="396.86035"
+       cy="97.821442"
+       fx="396.86035"
+       fy="97.821442"
+       r="144.19832"
+       gradientTransform="matrix(-0.41445974,0.45331641,-0.66569861,-0.60863731,626.81674,36.896487)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="图层 1"
@@ -126,14 +181,21 @@
          r="365.3718" />
     </g>
     <ellipse
-       style="fill:#f2f2f2;fill-opacity:0.442982;stroke:none;stroke-width:18.8729;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:url(#radialGradient1);fill-opacity:0.442982;stroke:none;stroke-width:18.8729;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
        id="path15"
        cx="402.32532"
        cy="242.01976"
        rx="144.19832"
        ry="89.000824" />
     <ellipse
-       style="fill:#f2f2f2;fill-opacity:0.442982;stroke:none;stroke-width:5.18729;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:url(#radialGradient1-4);fill-opacity:0.442982;stroke:none;stroke-width:13.3319;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="path15-4"
+       cx="401.07498"
+       cy="220.13274"
+       rx="101.86255"
+       ry="62.870712" />
+    <ellipse
+       style="fill:url(#linearGradient4);fill-opacity:0.442982;stroke:none;stroke-width:5.18729;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
        id="path15-1"
        cx="385.18393"
        cy="625.56415"

@@ -25,16 +25,28 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.12708801"
-     inkscape:cx="2309.4232"
-     inkscape:cy="609.81362"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="40"
+     inkscape:cx="78.685629"
+     inkscape:cy="-3.9342814"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="61"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop6" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop7" />
+    </linearGradient>
     <linearGradient
        id="linearGradient8"
        inkscape:collect="always">
@@ -104,6 +116,39 @@
        x2="388.69287"
        y2="627.89233"
        gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="radialGradient7"
+       cx="408.07944"
+       cy="-82.543076"
+       fx="408.07944"
+       fy="-82.543076"
+       r="241.42752"
+       gradientTransform="matrix(-0.35069012,0.42929649,-0.42980344,-0.35110425,515.71157,-200.54275)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="radialGradient7-4"
+       cx="408.07944"
+       cy="-82.543076"
+       fx="408.07944"
+       fy="-82.543076"
+       r="241.42752"
+       gradientTransform="matrix(-0.40022978,0.42929649,-0.49051891,-0.35110425,524.99155,-187.04748)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="radialGradient7-4-1"
+       cx="408.07944"
+       cy="-82.543076"
+       fx="408.07944"
+       fy="-82.543076"
+       r="241.42752"
+       gradientTransform="matrix(-0.30641339,0.34128424,-0.37553818,-0.27912259,-65.997495,-1082.9549)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="图层 1"
@@ -123,12 +168,27 @@
          style="fill:#494949;fill-opacity:1;stroke:url(#linearGradient9);stroke-width:11.0567;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;paint-order:markers fill stroke"
          d="m 398.59259,588.50989 1.71781,-1.71786 1.0967,1.09665 L 725.80811,263.48769 673.23824,210.91786 399.68952,484.46657 126.76199,211.53906 74.191893,264.10919 Z" />
       <ellipse
-         style="fill:#ffffff;fill-opacity:0.470588;stroke:none;stroke-width:25.707;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:url(#radialGradient7);fill-opacity:0.470588;stroke:none;stroke-width:25.707;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path5"
          cx="398.94421"
          cy="98.631966"
          rx="241.42752"
          ry="126.60223" />
+      <ellipse
+         style="fill:url(#radialGradient7-4);fill-opacity:0.470588;stroke:none;stroke-width:27.4628;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="path5-4"
+         cx="391.72922"
+         cy="112.12724"
+         rx="275.53238"
+         ry="126.60223" />
     </g>
+    <ellipse
+       style="fill:url(#radialGradient7-4-1);fill-opacity:0.470588;stroke:none;stroke-width:21.4253;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="path5-4-5"
+       cx="-168.02228"
+       cy="-845.11536"
+       rx="210.94585"
+       ry="100.64685"
+       transform="matrix(-0.72860013,0.6849393,-0.55751091,-0.83016961,0,0)" />
   </g>
 </svg>

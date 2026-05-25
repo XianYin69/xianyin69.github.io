@@ -1,12 +1,28 @@
 <script setup>
-import blog from "@/components/item-blog.vue"
+import itemBlog from "@/components/item-blog.vue";
+import contextBlog from "@/components/context-blog.vue";
+import {ref} from 'vue';
+
+const tabs = {
+  item: itemBlog,
+  context: contextBlog
+}
+
+const currentTab = ref('item')
+
+const switchComponent = (target) =>
+{
+  if (tabs[target]) {
+    currentTab.value = target;
+  }
+}
 
 </script>
 
 <template>
   <div class="body">
     <div class="blog">
-      <blog/>
+      <component :is="tabs[currentTab]" @switch="switchComponent"></component>
     </div>
   </div>
 </template>

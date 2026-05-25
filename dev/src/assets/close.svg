@@ -24,17 +24,53 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.062500002"
-     inkscape:cx="-4207.9999"
-     inkscape:cy="-631.99998"
-     inkscape:window-width="1920"
-     inkscape:window-height="1041"
-     inkscape:window-x="0"
-     inkscape:window-y="48"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.25000001"
+     inkscape:cx="1156"
+     inkscape:cy="1050"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="61"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient7"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.23578401;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.85581398;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.68217057;"
+         offset="0"
+         id="stop3" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
     <linearGradient
        id="linearGradient12"
        inkscape:collect="always">
@@ -151,6 +187,33 @@
        x2="314.21933"
        y2="114.22"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3"
+       id="linearGradient4"
+       x1="257.51843"
+       y1="76.917198"
+       x2="257.29538"
+       y2="173.65385"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5"
+       id="linearGradient6"
+       x1="48.899082"
+       y1="508.08246"
+       x2="55.154781"
+       y2="552.77625"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient8"
+       x1="252.63713"
+       y1="66.179558"
+       x2="249.78181"
+       y2="112.88099"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="图层 1"
@@ -174,14 +237,21 @@
          inkscape:path-effect="#path-effect5"
          inkscape:original-d="M 71.842126,-84.938485 -99.531392,30.682365 88.679858,0.74827474 83.927177,-23.437846 c 95.923363,5.46883 138.540863,73.628191 138.565593,158.867926 -1e-5,89.28258 -49.58116,164.07825 -150.26152,164.07825 -3.063933,-0.12547 -6.123808,-0.31948 -9.176701,-0.58187 19.228716,6.56722 39.393271,9.98027 59.712121,10.10687 104.04124,0 188.38333,-84.34209 188.38333,-188.38333 0,-104.041241 -84.34209,-188.383333 -188.38333,-188.383333 -15.63799,0.153427 -31.196016,2.253522 -46.315006,6.251814 z" />
       <ellipse
-         style="fill:#ffffff;fill-opacity:0.40625;stroke-width:13.5898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;paint-order:markers fill stroke"
+         style="fill:url(#linearGradient4);fill-opacity:0.40625;stroke-width:13.5898;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;paint-order:markers fill stroke"
          id="path10"
          cx="251.82132"
          cy="124.97522"
          rx="107.38889"
          ry="56.126595" />
       <ellipse
-         style="fill:#ffffff;fill-opacity:0.40625;stroke-width:3.74942;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;paint-order:markers fill stroke"
+         style="fill:url(#linearGradient8);fill-opacity:0.235784;stroke-width:8.683;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;paint-order:markers fill stroke"
+         id="path10-2"
+         cx="251.1319"
+         cy="102.17535"
+         rx="77.623451"
+         ry="31.699236" />
+      <ellipse
+         style="fill:url(#linearGradient6);fill-opacity:0.40625;stroke-width:3.74942;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;paint-order:markers fill stroke"
          id="path10-8"
          cx="49.944752"
          cy="536.43915"

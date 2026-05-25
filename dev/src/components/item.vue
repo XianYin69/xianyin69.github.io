@@ -30,6 +30,50 @@ const props = defineProps(['itemData'])
 
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: 100% 100%;
+
+  overflow: hidden;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgb(255 255 255 / 0.13) 50%,
+      rgb(208 252 255 / 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%
+  ) 200% 0;
+  background-size: 200% 100%;
+
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 4s ease;
+}
+
+.item:hover::after {
+  opacity: 1;
+  animation: wave-flow 5s linear infinite;
+}
+
+@keyframes wave-flow {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+#itemID, #show {
+  position: relative;
+  z-index: 2;
 }
 
 #itemID {
