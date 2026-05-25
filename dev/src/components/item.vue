@@ -96,6 +96,7 @@ const props = defineProps(['itemData'])
   position: absolute;
   right: 1rem;
   top: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 #show.is-open {

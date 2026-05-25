@@ -6,6 +6,9 @@ import blogPage from '@/views/blog.vue'
 import {computed, ref} from "vue";
 import topNavigator from '@/components/topNavigator.vue'
 import BottomNavigator from '@/components/bottomNavigator.vue'
+import co_panel from '@/components/co-contain.vue'
+
+
 const currentPageName = ref('blogPage')
 const changePage = (page) => {
   currentPageName.value = page;
@@ -36,6 +39,7 @@ window.addEventListener('mousemove', (e) => {
   <div class="main">
     <topNavigator @change-page="changePage" :current-active="currentPageName"/>
     <component :is="currentComponent"></component>
+    <co_panel/>
     <BottomNavigator />
     <div class="glow"></div>
   </div>
@@ -63,6 +67,7 @@ html, body {
   background:url('@/assets/background.svg') no-repeat fixed center center;
   background-size: cover;
 }
+
 
 :root {
   --mouse-x: 0px;

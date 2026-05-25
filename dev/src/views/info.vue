@@ -23,12 +23,14 @@ import content from '@/components/context.vue'
   height: 100%;
   margin: 0.1rem;
   background-size: 90% auto;
+
   .Info {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     width: auto;
     height: 80%;
+    position: relative;
   }
 
   #img {

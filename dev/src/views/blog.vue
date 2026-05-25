@@ -44,7 +44,7 @@ const switchComponent = (target) =>
     background: url("@/assets/backgroud-card.svg") no-repeat center center;
     background-size: 100% 100%;
     width: 40rem;
-    height: auto;
+    height: 37rem;
     margin-left: 7rem;
   }
 }
