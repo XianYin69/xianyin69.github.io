@@ -3,6 +3,8 @@
 import { ref } from 'vue';
 const isShow =  ref(false);
 
+import panelTime from './panel/time.vue'
+
 </script>
 
 <template>
@@ -10,7 +12,12 @@ const isShow =  ref(false);
     <div :class="['panel-wrapper', {'is-open': isShow}]">
       <div id = "showPanel" @click="isShow = !isShow"></div>
       <div class = "panel">
-        <div class="panel-time"></div>
+        <div class="panel-time">
+          <panel-time/>
+        </div>
+        <div class="panel-user">
+
+        </div>
       </div>
     </div>
   </div>
@@ -65,7 +72,14 @@ const isShow =  ref(false);
 
 .panel-time {
   width: 100%;
-  height: 7rem;
+  height: 4rem;
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.panel-user {
+  width: 100%;
+  height: 6rem;
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: 100% 100%;
 }
