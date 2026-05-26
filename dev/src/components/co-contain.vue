@@ -4,19 +4,20 @@ import { ref } from 'vue';
 const isShow =  ref(false);
 
 import panelTime from './panel/time.vue'
+import PanelUser from "@/components/panel/User/panel-user.vue";
 
 </script>
 
 <template>
   <div class="co-contain">
-    <div :class="['panel-wrapper', {'is-open': isShow}]">
+    <div :class="['panel-wrapper', isShow ? 'is-open' : '']">
       <div id = "showPanel" @click="isShow = !isShow"></div>
       <div class = "panel">
         <div class="panel-time">
           <panel-time/>
         </div>
         <div class="panel-user">
-
+          <panel-user/>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const WORKER_URL = "https://api-repo-users.ethanyan69.workers.dev/";
  */
 export function login() {
     const currentPath = window.location.pathname + window.location.search;
-    window.location.href = `${WORKER_URL}/api/auth/login?redirect=${encodeURIComponent(currentPath)}`;
+    window.location.href = `${WORKER_URL}api/auth/login?redirect=${encodeURIComponent(currentPath)}`;
 }
 
 /**
