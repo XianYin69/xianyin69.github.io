@@ -80,7 +80,7 @@ import PanelUser from "@/components/panel/User/panel-user.vue";
 
 .panel-user {
   width: 100%;
-  height: 6rem;
+  height: 8rem;
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: 100% 100%;
 }
