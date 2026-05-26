@@ -22,7 +22,7 @@ const {t} = useLang();
         <div @click="logout">
           <div class="logout">
             <div id = "logout">
-              {{t(Panel.Logout)}}
+              {{t('Panel.Logout')}}
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@ span {
 .logout {
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: 100% 100%;
-  width: 2rem;
-  height: 1rem;
+  width: auto;
+  height: auto;
 }
 
 #logout {
