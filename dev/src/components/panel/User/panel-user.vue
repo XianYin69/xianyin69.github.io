@@ -43,8 +43,7 @@ const {t} = useLang();
   gap: 1rem;
   height: auto;
   width: auto;
-  margin-left: 4rem;
-  margin-top: 1rem;
+  margin-left: 3rem;
   overflow: hidden;
 }
 
@@ -52,6 +51,8 @@ const {t} = useLang();
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 .Login {
@@ -75,7 +76,7 @@ span {
 .logout {
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: 100% 100%;
-  width: auto;
+  width: 9rem;
   height: auto;
 }
 
