@@ -9,16 +9,24 @@ onMounted(async () => {
   user.value = await fetchCurrentUser();
 });
 
-import { useLang } from "@/lang.js"
+import {useLang} from "@/lang.js";
 const {t} = useLang();
 </script>
 
 <template>
   <div class="user-panel">
-    <div v-if="user">
+    <div class="Login" v-if="user">
       <img :src="user.avatar" alt="avatar" class="avatar" />
-      <span>{{t('Panel.WelcomeBack')}}，{{ user.name }}</span>
-      <button @click="logout">{{ t('Panel.exit') }}</button>
+      <div class="login-text">
+        <span>{{t('Panel.WelcomeBack')}}，{{ user.name }}</span>
+        <div @click="logout">
+          <div class="logout">
+            <div id = "logout">
+              {{t(Panel.Logout)}}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div v-else>
@@ -44,6 +52,42 @@ const {t} = useLang();
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+
+.Login {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.login-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(31 84 129);
+}
+
+.logout {
+  background: url("@/assets/background-buttom.svg") no-repeat center center;
+  background-size: 100% 100%;
+  width: 2rem;
+  height: 1rem;
+}
+
+#logout {
+  color: #1d5380;
+  font-size: 1rem;
+}
+
+img {
+  width:4rem;
+  height:4rem;
+  align-self: center;
 }
 
 #img-github {
