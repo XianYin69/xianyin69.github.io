@@ -29,7 +29,7 @@ onMounted(async() => {
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 </style>

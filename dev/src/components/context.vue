@@ -14,7 +14,8 @@ const { t } = useLang();
   position: relative;
   width: auto;
   height: auto;
-  background: #48CAE4;
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
 #content {
   position: relative;

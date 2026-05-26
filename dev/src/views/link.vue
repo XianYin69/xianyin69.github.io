@@ -25,7 +25,7 @@ onMounted(async () => {
 
 <style scoped>
 .links {
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   flex-direction: column;

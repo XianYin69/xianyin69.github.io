@@ -1,0 +1,18 @@
+{
+  "organizationId": "default_org_01",
+  "organizationName": "Default",
+  "Users": [
+    {
+      "id": "1",
+      "username": "test",
+      "role": "Administrator",
+      "authProvider": "github",
+      "githubProfile": {
+        "id": 12345678,
+        "url": "https://github.com/test",
+        "avatarUrl": "https://avatars.github.com/u"
+      },
+      "createdAt": ""
+    }
+  ]
+}

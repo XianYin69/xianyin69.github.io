@@ -2,10 +2,14 @@
 import infoPage from '@/views/info.vue'
 import projectPage from '@/views/projects.vue'
 import linkPage from '@/views/link.vue'
+import blogPage from '@/views/blog.vue'
 import {computed, ref} from "vue";
 import topNavigator from '@/components/topNavigator.vue'
 import BottomNavigator from '@/components/bottomNavigator.vue'
-const currentPageName = ref('infoPage')
+import co_panel from '@/components/co-contain.vue'
+
+
+const currentPageName = ref('blogPage')
 const changePage = (page) => {
   currentPageName.value = page;
 }
@@ -17,18 +21,27 @@ const currentComponent = computed(() => {
       return projectPage;
     case 'linkPage':
       return linkPage;
+    case 'blogPage':
+      return blogPage;
     default:
       return infoPage;
   }
 })
+
+
+window.addEventListener('mousemove', (e) => {
+  document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+  document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+});
 </script>
 
 <template>
   <div class="main">
-    <p id="backgroundWord">XianYin69</p>
     <topNavigator @change-page="changePage" :current-active="currentPageName"/>
     <component :is="currentComponent"></component>
+    <co_panel/>
     <BottomNavigator />
+    <div class="glow"></div>
   </div>
 </template>
 
@@ -39,6 +52,8 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: auto;
+  cursor: none !important;
 }
 .main {
   display: flex;
@@ -47,20 +62,34 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
-  background: #6CD5EA;
   width: 100%;
   height: 100%;
+  background:url('@/assets/background.svg') no-repeat fixed center center;
+  background-size: cover;
 }
 
-#backgroundWord {
-  font-size: 10rem;
-  background-color: #ADE8F4;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  bottom: 2rem;
-  left: 0.5rem;
-  font-style: normal;
-  font-weight: bolder;
+
+:root {
+  --mouse-x: 0px;
+  --mouse-y: 0px;
 }
+
+.glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+
+  width: 4rem;
+  height: 4rem;
+
+  transform: translate3d(calc(var(--mouse-x) - 2rem), calc(var(--mouse-y) - 2rem), 0);
+
+  background: url("@/assets/cursor.svg") no-repeat center center;
+  background-size: cover;
+
+  transition: transform 0s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 </style>

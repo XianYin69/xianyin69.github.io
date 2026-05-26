@@ -2,9 +2,10 @@
   "zh": {
     "content": "这是一位 <b>神人</b> ，懒癌晚期患者兼阿宅！\n一位很⑨的 <b>大笨蛋</b> ！\n一个 <b>大</b> 魔法师！\n和这人合作的人 <b>都</b> 很不幸！",
     "topNavigator": {
-      "home": "首页",
       "project": "项目",
-      "link": "链接"
+      "link": "链接",
+      "info": "关于我",
+      "blog": "博客"
     },
     "bottonNavigator": {
       "title": "更多",
@@ -26,25 +27,18 @@
       "developing": "开发中",
       "discord": "已废弃",
       "released": "已发布",
-      "testing": "测试中",
       "available": "可用",
       "unavailable": "不可用"
     },
-    "stateDes": {
-      "inProcess": "开发中",
-      "discord": "已废弃",
-      "released": "已发布",
-      "testing": "测试中",
-      "available": "可用",
-      "unavailable": "不可用"
-    }
+    "Status": "状态:"
   },
   "en": {
     "content": "A <b>stupid</b> ,Lazy guy and stay at home!\nA <b>Baka</b> !\nA <b>Magician</b> !\nA <b>Lonely</b> cooperator！",
     "topNavigator": {
       "home": "Home",
       "project": "Project",
-      "link": "Link"
+      "link": "Link",
+      "info": "Info"
     },
     "bottonNavigator": {
       "title": "More",
@@ -84,7 +78,8 @@
     "topNavigator": {
       "home": "主頁",
       "project": "項目",
-      "link": "鏈接"
+      "link": "鏈接",
+      "info": "概覽"
     },
     "bottonNavigator": {
       "title": "更多",

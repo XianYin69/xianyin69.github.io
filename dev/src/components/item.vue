@@ -1,103 +1,107 @@
 <script setup>
 //状态说明
-import stateDes from "@/components/stateDes.vue"
-import { ref,computed } from 'vue'
-const isHoveringState = ref(false)
-let hoverTimeout = null;
-const HOVER_DELAY = 1000;
-const handleMouseEnter = () => {
-  if (hoverTimeout) {
-    clearTimeout(hoverTimeout);
-  }
-  hoverTimeout = setTimeout(() => {
-    isHoveringState.value = true
-  }, HOVER_DELAY);
-};
-const handleMouseLeave = () => {
-  if (hoverTimeout) {
-    clearTimeout(hoverTimeout);
-    hoverTimeout = null;
-  }
-  isHoveringState.value = false
-}
+import InfoDes from "@/components/InfoDes.vue"
+import {ref} from "vue";
+const isShow = ref(false);
+
 //状态
 const props = defineProps(['itemData'])
-//state 背景色
-const stateColorMap = {
-  'developing': '#F9C744',
-  'released': '#90BE6D',
-  'discord': '#F77038',
-  'available': '#90BE6D',
-  'unavailable': '#F77038',
-  'testing': '#5986B0'
-}
-const stateBackgroundStyle = computed(() => {
-  const currentState = props.itemData.state;
-  const background = stateColorMap[currentState];
-  return {
-    background: background
-  };
-});
-//翻译
-import { useLang } from "@/lang.js";
-const { t } = useLang();
 </script>
 
 <template>
-  <div class="item">
-    <div id="item">
-      <a id="itemID" :href="props.itemData.url">{{ itemData.id }}</a>
-    </div>
-    <div id="state"
-         :style="stateBackgroundStyle"
-         @mouseenter="handleMouseEnter"
-         @mouseleave="handleMouseLeave">
-      <p id="stateID">{{ t('projectState.' + itemData.state) }}</p>
-    </div>
+  <div class="item" >
+    <a id="itemID" :href="props.itemData.url">{{ itemData.id }}</a>
+    <div id="show" :class="{ 'is-open': isShow}" @click="isShow = !isShow"></div>
   </div>
-  <stateDes id="stateDes" v-if="isHoveringState"/>
+  <InfoDes v-if="isShow" :itemData="itemData"/>
 </template>
 
 <style scoped>
 .item {
   position: relative;
-  left: 5rem;
-  display: flex;
-  flex-direction: row;
+  left: 7rem;
   height: 3rem;
-  width: 42rem;
+  width: 40rem;
   font-size: 2rem;
   font-weight: bold;
   transition: width 0.2s, height 0.2s, font-weight 0.2s;
+  display: flex;
+  flex-direction: row;
+
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
+
+  overflow: hidden;
 }
-#state {
-  width: 15rem;
+
+.item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgb(255 255 255 / 0.13) 50%,
+      rgb(208 252 255 / 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%
+  ) 200% 0;
+  background-size: 200% 100%;
+
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 4s ease;
 }
-#item {
-  background: #0096C7;
-  width: 32rem;
+
+.item:hover::after {
+  opacity: 1;
+  animation: wave-flow 5s linear infinite;
 }
-#itemID {
-  background: #FFFFFF;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+@keyframes wave-flow {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+#itemID, #show {
   position: relative;
-  top: 5%;
+  z-index: 2;
+}
+
+#itemID {
+  font-size: 1.75rem !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) scale(1.08);
+  text-shadow: 0 0 15px rgb(8 205 201), 0 0 2px rgb(149 149 149);
+  position: relative;
+  top: 2%;
   left: 5%;
   text-decoration-line: none;
 }
-#stateID {
-  background: #FFFFFF;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  top: -70%;
-  left: 5%;
-  width: auto;
+
+#show {
+  width: 2rem;
+  height: 2rem;
+  background: url("@/assets/notShow.svg") no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  transition: all 0.3s ease;
 }
-.item:hover {
-  height: 3.7rem;
-  width: 47rem;
-  font-size: 2.5rem;
+
+#show.is-open {
+  background: url("@/assets/isShow.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
+
 </style>
