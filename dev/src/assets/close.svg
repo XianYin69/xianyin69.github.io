@@ -25,8 +25,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.25000001"
-     inkscape:cx="1156"
-     inkscape:cy="1050"
+     inkscape:cx="83.999997"
+     inkscape:cy="1457.9999"
      inkscape:window-width="2560"
      inkscape:window-height="1494"
      inkscape:window-x="-11"
@@ -75,11 +75,11 @@
        id="linearGradient12"
        inkscape:collect="always">
       <stop
-         style="stop-color:#4de165;stop-opacity:1;"
+         style="stop-color:#63e4c4;stop-opacity:1;"
          offset="0"
          id="stop12" />
       <stop
-         style="stop-color:#0bd982;stop-opacity:1;"
+         style="stop-color:#0bed8e;stop-opacity:1;"
          offset="1"
          id="stop13" />
     </linearGradient>
@@ -112,7 +112,7 @@
        id="path-effect5"
        is_visible="true"
        lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,9.6592789,0,1 @ F,0,0,1,0,13.191323,0,1 @ F,0,0,1,0,14.709806,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       nodesatellites_param="F,0,0,1,0,9.6592789,0,1 @ F,0,0,1,0,13.191323,0,1 @ F,0,0,1,0,14.709806,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,12.621176,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
        radius="0"
        unit="px"
        method="auto"
@@ -184,8 +184,8 @@
        id="linearGradient13"
        x1="-92.923817"
        y1="114.22"
-       x2="314.21933"
-       y2="114.22"
+       x2="312.57785"
+       y2="114.20827"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
@@ -230,8 +230,8 @@
          r="199.81068" />
       <path
          id="path2"
-         style="fill:#14632d;fill-opacity:1;stroke:url(#linearGradient13);stroke-width:6.13867;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke;stroke-opacity:1"
-         d="M 63.834826,-79.536187 -88.596117,23.304645 a 2.920762,2.920762 68.478325 0 0 2.092308,5.305746 L 74.15264,3.0587586 A 14.185187,14.185187 124.92292 0 0 85.843557,-13.685498 l -1.91638,-9.752348 c 95.923363,5.46883 138.540863,73.628191 138.565593,158.867926 -1e-5,89.28258 -49.58116,164.07825 -150.26152,164.07825 -3.063933,-0.12547 -6.123808,-0.31948 -9.176701,-0.58187 19.228716,6.56722 39.393271,9.98027 59.712121,10.10687 104.04124,0 188.38333,-84.34209 188.38333,-188.38333 0,-104.041241 -84.34209,-188.383333 -188.38333,-188.383333 -15.63799,0.153427 -31.196016,2.253522 -46.315006,6.251814 l -2.747011,-13.978957 a 6.4068175,6.4068175 22.438011 0 0 -9.869827,-4.075711 z"
+         style="fill:#b4f9e3;fill-opacity:1;stroke:url(#linearGradient13);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.7;stroke-dasharray:none;paint-order:markers fill stroke;stroke-opacity:1"
+         d="M 63.834826,-79.536187 -88.596117,23.304645 a 2.920762,2.920762 68.478325 0 0 2.092308,5.305746 L 74.15264,3.0587586 A 14.185187,14.185187 124.92292 0 0 85.843557,-13.685498 l -1.91638,-9.752348 c 95.923363,5.46883 138.540863,73.628191 138.565593,158.867926 -1e-5,89.28258 -49.58116,164.07825 -150.26152,164.07825 -5.074118,-0.20779 -3.836384,1.28845 2.894759,3.09432 15.523723,4.1648 31.533711,6.33032 47.640661,6.43068 104.04124,0 188.38333,-84.34209 188.38333,-188.38333 0,-104.041241 -84.34209,-188.383333 -188.38333,-188.383333 -15.63799,0.153427 -31.196016,2.253522 -46.315006,6.251814 l -2.747011,-13.978957 a 6.4068175,6.4068175 22.438011 0 0 -9.869827,-4.075711 z"
          transform="matrix(0.87121842,0,0,0.87121842,159.71715,157.09651)"
          sodipodi:nodetypes="ccccccccsccc"
          inkscape:path-effect="#path-effect5"

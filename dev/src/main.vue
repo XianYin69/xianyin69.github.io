@@ -33,6 +33,14 @@ window.addEventListener('mousemove', (e) => {
   document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
   document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
 });
+
+window.addEventListener('mousedown', () => {
+  document.documentElement.style.setProperty('--mouse-scale', '0.8');
+});
+
+window.addEventListener('mouseup', ()=>{
+  document.documentElement.style.setProperty('--mouse-scale', '1');
+});
 </script>
 
 <template>
@@ -84,12 +92,13 @@ html, body {
   width: 4rem;
   height: 4rem;
 
-  transform: translate3d(calc(var(--mouse-x) - 2rem), calc(var(--mouse-y) - 2rem), 0);
+  transform: translate3d(calc(var(--mouse-x) - 2rem), calc(var(--mouse-y) - 2rem), 0) scale3d(var(--mouse-scale, 1), var(--mouse-scale, 1), 1);
 
   background: url("@/assets/cursor.svg") no-repeat center center;
   background-size: cover;
 
-  transition: transform 0s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+
 }
 
 </style>

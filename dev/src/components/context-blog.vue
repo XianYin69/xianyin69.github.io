@@ -70,6 +70,7 @@ const toItem = () => {
   font-weight: bolder;
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: cover;
+  color: #FFFFFF;
 }
 
 .context {
@@ -86,6 +87,7 @@ const toItem = () => {
   width: 100%;
   height: 100%;
   margin-left: 1rem;
+  color: #FFFFFF;
 }
 
 .foot{
@@ -111,6 +113,7 @@ const toItem = () => {
 #editor-id {
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: cover;
+  color: #FFFFFF;
 }
 
 .time {
@@ -129,6 +132,7 @@ const toItem = () => {
 #date-time {
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: cover;
+  color: #FFFFFF;
 }
 
 </style>

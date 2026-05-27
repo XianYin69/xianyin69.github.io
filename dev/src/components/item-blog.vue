@@ -120,6 +120,7 @@ const toContext = () => {
 
 #blog-title {
   font-weight: bolder;
+  color: #FFFFFF;
 }
 
 .blog-editor {
@@ -140,6 +141,7 @@ const toContext = () => {
 
 #blog-editor {
   font-weight: normal;
+  color: #FFFFFF;
 }
 
 .blog-time {
@@ -161,5 +163,6 @@ const toContext = () => {
 
 #blog-time {
   font-style: italic;
+  color: #FFFFFF;
 }
 </style>

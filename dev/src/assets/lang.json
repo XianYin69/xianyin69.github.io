@@ -30,7 +30,12 @@
       "available": "可用",
       "unavailable": "不可用"
     },
-    "Status": "状态:"
+    "Status": "状态:",
+    "Panel": {
+      "Sign": "使用 Github 登录",
+      "WelcomeBack": "欢迎回来",
+      "Logout": "退出登录"
+    }
   },
   "en": {
     "content": "A <b>stupid</b> ,Lazy guy and stay at home!\nA <b>Baka</b> !\nA <b>Magician</b> !\nA <b>Lonely</b> cooperator！",

@@ -103,6 +103,6 @@ img {
   font-weight: bold;
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #1d5380;
+  color: #929292;
 }
 </style>

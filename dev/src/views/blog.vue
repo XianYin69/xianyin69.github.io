@@ -1,6 +1,7 @@
 <script setup>
 import itemBlog from "@/components/item-blog.vue";
 import contextBlog from "@/components/context-blog.vue";
+import {showComments} from "@/blog.js";
 import {ref} from 'vue';
 
 const tabs = {
@@ -14,6 +15,11 @@ const switchComponent = (target) =>
 {
   if (tabs[target]) {
     currentTab.value = target;
+    if(target === "context") {
+      showComments.emit('tab-changed', target);
+    } else {
+      showComments.emit('tab-changed', 'close');
+    }
   }
 }
 

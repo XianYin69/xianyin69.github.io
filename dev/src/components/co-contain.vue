@@ -2,10 +2,32 @@
 
 import { ref } from 'vue';
 const isShow =  ref(false);
+const showCom = ref(false);
 
 import panelTime from './panel/time.vue'
 import PanelUser from "@/components/panel/User/panel-user.vue";
+import PanelComment from "@/components/panel/Comment/panel-comment.vue";
 
+import {showComments} from "@/blog.js";
+
+const handleTabChange = (data) => {
+  if (data === "context") {
+    showCom.value = true;
+    isShow.value = true;
+  } else {
+    showCom.value = false;
+  }
+}
+
+import {onMounted, onUnmounted} from "vue";
+
+onMounted(() => {
+  showComments.on('tab-changed', handleTabChange);
+})
+
+onUnmounted(()=> {
+  showComments.off('tab-changed', handleTabChange);
+})
 </script>
 
 <template>
@@ -18,6 +40,9 @@ import PanelUser from "@/components/panel/User/panel-user.vue";
         </div>
         <div class="panel-user">
           <panel-user/>
+        </div>
+        <div class="panel-comment" v-if="showCom">
+          <panel-comment/>
         </div>
       </div>
     </div>
@@ -81,6 +106,13 @@ import PanelUser from "@/components/panel/User/panel-user.vue";
 .panel-user {
   width: 100%;
   height: 8rem;
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.panel-comment {
+  width: 100%;
+  height: 20rem;
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: 100% 100%;
 }
