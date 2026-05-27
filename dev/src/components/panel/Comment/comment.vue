@@ -1,18 +1,22 @@
 <script setup>
-import {ref} from "vue";
-const showMenu = ref(true);
+import {handleError, ref} from "vue";
+const showMenu = ref(false);
+
+const isShowMenu = () => {
+  showMenu.value = !showMenu.value;
+}
 </script>
 
 <template>
 <div class="comment">
-  <div class="userComment">
+  <div class="userComment" @click="isShowMenu">
     <div class="userInfo">
       <div id="img-user">IMG</div>
       <div id="userInfo">A</div>
     </div>
     <div id="comment-context">NM</div>
   </div>
-  <div class="menu" v-if="ref(showMenu)">
+  <div class="menu" v-if="showMenu">
     <div id="respond">respond</div>
   </div>
 </div>
@@ -89,5 +93,6 @@ const showMenu = ref(true);
   margin: 0.5rem;
   align-content: center;
   text-align: center;
+  color: #FFFFFF;
 }
 </style>
