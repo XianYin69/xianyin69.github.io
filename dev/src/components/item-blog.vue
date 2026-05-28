@@ -33,7 +33,7 @@ const toContext = () => {
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: 100% 100%;
   margin-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
   display: flex;
   flex-direction: row;
