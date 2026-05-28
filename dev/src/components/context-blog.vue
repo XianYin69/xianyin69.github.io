@@ -30,6 +30,11 @@ const toItem = () => {
         a
       </div>
     </div>
+    <div class="featureBar">
+      <div class="favorite">收藏</div>
+      <div class="like">还行</div>
+      <div class="shit">大便</div>
+    </div>
   </div>
 </template>
 
@@ -42,13 +47,16 @@ const toItem = () => {
   margin-top: 1rem;
   margin-left: 2rem;
   gap: 0.5rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #exit {
   background: url("@/assets/close.svg") no-repeat center center;
   background-size: 100% 100%;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .head {
@@ -75,12 +83,11 @@ const toItem = () => {
 
 .context {
   width: 100%;
-  height: 100%;
+  height: 40rem;
   font-size: 1rem;
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: cover;
 
-  overflow: hidden;
 }
 
 #blog-context {
@@ -133,6 +140,39 @@ const toItem = () => {
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: cover;
   color: #FFFFFF;
+}
+
+.featureBar {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: url("@/assets/backgroud-card.svg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.favorite {
+  width: 5rem;
+  height: 2rem;
+  margin: 1rem;
+  background: url("@/assets/background-buttom.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.like {
+  width: 5rem;
+  height: 2rem;
+  margin: 1rem;
+  background: url("@/assets/background-buttom.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.shit {
+  width: 5rem;
+  height: 2rem;
+  margin: 1rem;
+  background: url("@/assets/background-buttom.svg") no-repeat center center;
+  background-size: cover;
 }
 
 </style>

@@ -40,6 +40,8 @@ const handleSend = () => {
 .comments {
   width: 100%;
   height: 90%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .send-comment {
