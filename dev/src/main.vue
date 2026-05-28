@@ -46,7 +46,9 @@ window.addEventListener('mouseup', ()=>{
 <template>
   <div class="main">
     <topNavigator @change-page="changePage" :current-active="currentPageName"/>
-    <component :is="currentComponent"></component>
+    <div class="page">
+      <component :is="currentComponent"></component>
+    </div>
     <co_panel/>
     <BottomNavigator />
     <div class="glow"></div>
@@ -76,6 +78,12 @@ html, body {
   background-size: cover;
 }
 
+.page {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
 
 :root {
   --mouse-x: 0px;

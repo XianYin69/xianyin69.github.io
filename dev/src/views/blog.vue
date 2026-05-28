@@ -41,7 +41,7 @@ const isShowMenu = ref(true);
           <div class="menuFavorite">
             <div id="iconMenuFavorite"></div>
             <div id="textMenuFavorite">
-              喜爱
+              收藏夹
             </div>
           </div>
           <div class="menuInfoBox">
@@ -52,7 +52,9 @@ const isShowMenu = ref(true);
           </div>
         </div>
       </div>
-      <component :is="tabs[currentTab]" @switch="switchComponent"></component>
+      <div class="content">
+        <component :is="tabs[currentTab]" @switch="switchComponent"></component>
+      </div>
     </div>
   </div>
 </template>
@@ -63,9 +65,17 @@ const isShowMenu = ref(true);
   flex-direction: column;
   gap: 0.1rem;
   position: relative;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   margin: 0.1rem;
+
+  .content {
+    width: 95%;
+    height: 30rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 1rem;
+  }
 
   .menuTop {
     width: 90%;
@@ -92,6 +102,25 @@ const isShowMenu = ref(true);
     width: 8rem;
     height: 3rem;
     margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  #iconMenuWrite {
+    width: 3rem;
+    height: 3rem;
+    background: url("@/assets/blog/write.svg") center center no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1rem;
+  }
+
+  #textMenuWrite {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFFFFF;
   }
 
   .menuFavorite {
@@ -100,6 +129,25 @@ const isShowMenu = ref(true);
     width: 8rem;
     height: 3rem;
     margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  #iconMenuFavorite {
+    background: url("@/assets/blog/like.svg") center center no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+
+  #textMenuFavorite {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFFFFF;
   }
 
   .menuInfoBox {
@@ -108,6 +156,25 @@ const isShowMenu = ref(true);
     width: 8rem;
     height: 3rem;
     margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  #iconMenuInfo {
+    background: url("@/assets/blog/infoBox.svg") center center no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+  #textMenuInfo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFFFFF;
   }
 
   .blog {

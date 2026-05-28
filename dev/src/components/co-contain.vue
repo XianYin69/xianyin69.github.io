@@ -51,8 +51,9 @@ onUnmounted(()=> {
 
 <style scoped>
 .co-contain {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
 }
 
 .panel-wrapper {
