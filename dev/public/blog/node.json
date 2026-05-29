@@ -1,13 +1,13 @@
 {
   "selfMarkdownURL": "",
-  "nodeInfo": {
+  "nodeProp": {
     "Title": "",
     "userName": "",
     "data": {
       "year": 1970,
       "month": 1,
       "day": 1
-    },
+    }
   },
   "next-node": {
     "selfName": "",
