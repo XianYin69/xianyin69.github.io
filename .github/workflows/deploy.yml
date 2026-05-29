@@ -20,6 +20,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
+    # 核心修正：指定后续所有 run 命令默认在 dev 文件夹下执行
+    defaults:
+      run:
+        working-directory: ./dev
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,7 +33,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # 采用较稳定的 Node.js 版本
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
@@ -38,7 +44,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dev/dist # 核心：指向你 Vue 编译后生成的静态文件夹（默认是 dist）
+          # 核心修正：指向 dev 文件夹内打包生成的 dist 目录
+          path: ./dev/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
