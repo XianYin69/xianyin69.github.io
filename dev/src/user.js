@@ -7,6 +7,7 @@ import {defineStore} from "pinia";
 import {ref} from "vue";
 
 const WORKER_URL = "https://api-repo-users.ethanyan69.workers.dev";
+const isLoggedIn = ref(false);
 
 /**
  * 0. 自动解析并保存 URL 中的 Token
@@ -54,6 +55,7 @@ export async function fetchCurrentUser() {
         });
 
         if (response.ok) {
+            isLoggedIn.value = true;
             return await response.json();
         }
     } catch (error) {
@@ -85,13 +87,7 @@ export async function logout() {
 }
 
 export const useUserStore = defineStore('user', ()=>{
-    const isLoggedIn = ref(false);
-    async function checkLoggedIn() {
-        const userInfo = await fetchCurrentUser();
-        isLoggedIn.value = userInfo !== null;
-    }
     return {
         isLoggedIn,
-        checkLoggedIn,
     }
 })

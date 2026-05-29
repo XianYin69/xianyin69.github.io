@@ -167,14 +167,13 @@ const isShowBar = store.isLoggedIn;
 .favorite {
   width: 7rem;
   height: 3rem;
-  margin: 0.5rem;
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: row;
   gap: 0.1rem;
   align-items: center;
-  margin-left: 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 1rem;
 }
 
 .like {

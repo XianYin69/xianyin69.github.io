@@ -83,6 +83,7 @@ span {
 #logout {
   color: #1d5380;
   font-size: 2rem;
+  margin-left: 2rem;
 }
 
 img {
