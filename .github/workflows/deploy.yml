@@ -37,9 +37,7 @@ jobs:
 
       # 显式指定在 ./dev 下进行编译
       - name: Build
-        run: |
-          chmod +x ./node_modules/.bin/vite || true
-          npm run build
+        run: npm run build
         working-directory: ./dev
 
       # 从根目录视角上传打包好的静态文件夹
