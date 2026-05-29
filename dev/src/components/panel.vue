@@ -11,8 +11,10 @@ import PanelComment from "@/components/panel/Comment/panel-comment.vue";
 import {showComments} from "@/blog.js";
 import {onMounted, onUnmounted} from "vue";
 
+import {isLoggedIn} from "@/user.js";
+
 const handleTabChange = (data) => {
-  if (data === "context") {
+  if (data === "context" && isLoggedIn.value) {
     showCom.value = true;
     isShow.value = true;
   } else {

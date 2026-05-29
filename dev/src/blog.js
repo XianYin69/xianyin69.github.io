@@ -1,5 +1,4 @@
 import MarkdownIt from 'markdown-it';
-import {isLoggedIn} from "@/user.js";
 
 const md = new MarkdownIt({
     html: true,
@@ -15,9 +14,6 @@ export function parseMarkdownIt(rawMarkdown) {
 const BlogContext = {}
 export const showComments = {
     on(isBlogContext, callback) {
-
-        if(!isLoggedIn.value) return;
-
         if(!BlogContext[isBlogContext]) {
             BlogContext[isBlogContext] = [];
         }
