@@ -6,6 +6,10 @@ const toItem = () => {
   emit('switch', 'item')
 }
 
+import {useUserStore} from "@/user.js";
+const store = useUserStore();
+const isShowBar = store.isLoggedIn;
+
 </script>
 
 <template>
@@ -30,7 +34,7 @@ const toItem = () => {
         a
       </div>
     </div>
-    <div class="featureBar">
+    <div class="featureBar" v-if="isShowBar">
       <div class="favorite">
         <div id="img-favorite"/>
         <div id="text-favorite">收藏</div>

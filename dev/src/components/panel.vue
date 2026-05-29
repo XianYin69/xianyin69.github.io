@@ -9,6 +9,7 @@ import PanelUser from "@/components/panel/User/panel-user.vue";
 import PanelComment from "@/components/panel/Comment/panel-comment.vue";
 
 import {showComments} from "@/blog.js";
+import {onMounted, onUnmounted} from "vue";
 
 const handleTabChange = (data) => {
   if (data === "context") {
@@ -19,7 +20,7 @@ const handleTabChange = (data) => {
   }
 }
 
-import {onMounted, onUnmounted} from "vue";
+
 
 onMounted(() => {
   showComments.on('tab-changed', handleTabChange);

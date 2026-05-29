@@ -2,7 +2,7 @@
 import itemBlog from "@/components/item-blog.vue";
 import contextBlog from "@/components/context-blog.vue";
 import {showComments} from "@/blog.js";
-import {ref} from 'vue';
+import {computed, ref} from 'vue';
 
 const tabs = {
   item: itemBlog,
@@ -23,14 +23,18 @@ const switchComponent = (target) =>
   }
 }
 
-const isShowMenu = ref(true);
+import {useUserStore} from "@/user.js";
+const store = useUserStore();
+const isShowBar = computed(() => {
+  return store.isLoggedIn && (currentTab.value === 'item');
+})
 
 </script>
 
 <template>
   <div class="page-blog">
     <div class="blog">
-      <div class="menuTop" v-if="isShowMenu">
+      <div class="menuTop" v-if="isShowBar">
         <div class="menuBox">
           <div class="menuWrite">
             <div id="iconMenuWrite"></div>
@@ -75,6 +79,7 @@ const isShowMenu = ref(true);
     overflow-x: hidden;
     overflow-y: auto;
     margin-left: 1rem;
+    margin-top: 0.5rem;
   }
 
   .menuTop {
