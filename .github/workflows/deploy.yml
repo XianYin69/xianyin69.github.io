@@ -3,7 +3,7 @@ name: Deploy Vue Site
 on:
   push:
     branches:
-      - main # 只有当代码推送到 main 分支时才触发
+      - main
 
 permissions:
   contents: read
@@ -21,11 +21,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
-    # 核心修正：指定后续所有 run 命令默认在 dev 文件夹下执行
-    defaults:
-      run:
-        working-directory: ./dev
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,18 +30,22 @@ jobs:
         with:
           node-version: 20
 
+      # 显式指定在 ./dev 下安装依赖
       - name: Install dependencies
         run: npm install
+        working-directory: ./dev
 
+      # 显式指定在 ./dev 下进行编译
       - name: Build
         run: |
-          chmod +x ./node_modules/.bin/vite
+          chmod +x ./node_modules/.bin/vite || true
           npm run build
+        working-directory: ./dev
 
+      # 从根目录视角上传打包好的静态文件夹
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 核心修正：指向 dev 文件夹内打包生成的 dist 目录
           path: ./dev/dist
 
       - name: Deploy to GitHub Pages
