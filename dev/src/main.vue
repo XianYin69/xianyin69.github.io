@@ -41,6 +41,13 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', ()=>{
   document.documentElement.style.setProperty('--mouse-scale', '1');
 });
+
+import {onMounted} from "vue";
+import {initAuth} from "./user.js";
+
+onMounted(() => {
+  initAuth();
+})
 </script>
 
 <template>

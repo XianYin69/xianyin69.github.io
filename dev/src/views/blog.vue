@@ -23,10 +23,9 @@ const switchComponent = (target) =>
   }
 }
 
-import {useUserStore} from "@/user.js";
-const store = useUserStore();
+import {isLoggedIn} from "@/user.js";
 const isShowBar = computed(() => {
-  return store.isLoggedIn && (currentTab.value === 'item');
+  return isLoggedIn.value && (currentTab.value === 'item');
 })
 
 </script>
