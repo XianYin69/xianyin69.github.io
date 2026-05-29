@@ -6,7 +6,7 @@ import blogPage from '@/views/blog.vue'
 import {computed, ref} from "vue";
 import topNavigator from '@/components/topNavigator.vue'
 import BottomNavigator from '@/components/bottomNavigator.vue'
-import co_panel from '@/components/co-contain.vue'
+import Panel from '@/components/panel.vue'
 
 
 const currentPageName = ref('blogPage')
@@ -49,7 +49,7 @@ window.addEventListener('mouseup', ()=>{
     <div class="page">
       <component :is="currentComponent"></component>
     </div>
-    <co_panel/>
+    <panel/>
     <BottomNavigator />
     <div class="glow"></div>
   </div>

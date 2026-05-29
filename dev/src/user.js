@@ -3,6 +3,9 @@
 // ==========================================
 
 // 替换为你的 Worker 真实绑定的域名（注意：去掉了末尾多余的斜杠）
+import {defineStore} from "pinia";
+import {ref} from "vue";
+
 const WORKER_URL = "https://api-repo-users.ethanyan69.workers.dev";
 
 /**
@@ -80,3 +83,15 @@ export async function logout() {
         window.location.reload();
     }
 }
+
+export const useUserStore = defineStore('user', ()=>{
+    const isLoggedIn = ref(false);
+    async function checkLoggedIn() {
+        const userInfo = await fetchCurrentUser();
+        isLoggedIn.value = userInfo !== null;
+    }
+    return {
+        isLoggedIn,
+        checkLoggedIn,
+    }
+})

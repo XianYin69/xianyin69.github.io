@@ -28,6 +28,7 @@ onMounted(() => {
 onUnmounted(()=> {
   showComments.off('tab-changed', handleTabChange);
 })
+
 </script>
 
 <template>
@@ -109,6 +110,7 @@ onUnmounted(()=> {
   height: 8rem;
   background: url("@/assets/backgroud-card.svg") no-repeat center center;
   background-size: 100% 100%;
+  align-items: center;
 }
 
 .panel-comment {

@@ -76,13 +76,13 @@ span {
 .logout {
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: 100% 100%;
-  width: 9rem;
-  height: auto;
+  width: auto;
+  height: 4rem;
 }
 
 #logout {
   color: #1d5380;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 img {

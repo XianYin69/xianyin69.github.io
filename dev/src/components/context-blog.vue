@@ -31,9 +31,18 @@ const toItem = () => {
       </div>
     </div>
     <div class="featureBar">
-      <div class="favorite">收藏</div>
-      <div class="like">还行</div>
-      <div class="shit">大便</div>
+      <div class="favorite">
+        <div id="img-favorite"/>
+        <div id="text-favorite">收藏</div>
+      </div>
+      <div class="like">
+        <div id="img-like"/>
+        <div id="text-like">还行</div>
+      </div>
+      <div class="shit">
+        <div id="img-shit"/>
+        <div id="text-shit">屎</div>
+      </div>
     </div>
   </div>
 </template>
@@ -152,27 +161,78 @@ const toItem = () => {
 }
 
 .favorite {
-  width: 5rem;
-  height: 2rem;
-  margin: 1rem;
+  width: 7rem;
+  height: 3rem;
+  margin: 0.5rem;
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+  align-items: center;
+  margin-left: 1rem;
 }
 
 .like {
-  width: 5rem;
-  height: 2rem;
-  margin: 1rem;
+  width: 7rem;
+  height: 3rem;
+  margin: 0.5rem;
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+  align-items: center;
 }
 
 .shit {
-  width: 5rem;
-  height: 2rem;
-  margin: 1rem;
+  width: 7rem;
+  height: 3rem;
+  margin: 0.5rem;
   background: url("@/assets/background-buttom.svg") no-repeat center center;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+  align-items: center;
 }
+
+#img-favorite {
+  background: url("@/assets/blog/mark.svg") no-repeat center center;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.3rem;
+}
+
+#text-favorite {
+  color: white;
+}
+
+#img-like {
+  background: url("@/assets/blog/delicious.svg") no-repeat center center;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.3rem;
+}
+
+#text-like {
+  color: white;
+}
+
+#img-shit {
+  background: url("@/assets/blog/holyshit.svg") no-repeat center center;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.3rem;
+}
+
+#text-shit {
+  color: white;
+}
+
+
 
 </style>
