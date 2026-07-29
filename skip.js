@@ -17,5 +17,7 @@
     if (!supportES2016()) {
         console.warn("Worried Browser:", userInfo.userAgent);
         window.location.href = './old/endSupport.html'
+    }else {
+        window.location.href = './MainPage.html'
     }
 })();
