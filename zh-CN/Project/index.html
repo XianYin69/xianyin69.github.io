@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>XianYin69 - 项目</title>
+    <link rel="icon" href="../../assets/intro-ClAmIAr9.svg">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +63,158 @@
             text-shadow: 0.1vw 0.1vw 0.5vw #bafcff;
         }
 
-        
+        .body {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+        }
+
+        .body-title {
+            width: 98.5vw;
+            height: 25vh;
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+            background: rgb(116 246 243 / 0.49);
+        }
+
+        #body-title-icon {
+            width: 15vw;
+            height: 15vw;
+            position: relative;
+            left: 1vw;
+        }
+
+        #body-title-icon-img {
+            width: 15vw;
+            height: 15vw;
+        }
+
+        #body-title-text {
+            width: 20vw;
+            height: 20vw;
+            font-size: 5vw;
+            position:relative;
+            top: 12vh;
+            -webkit-text-fill-color: black;
+            font-weight: lighter;
+        }
+
+        .project-item {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+            width: 98.5vw;
+            height: 10vh;
+            background: rgb(116 246 243 / 0.49);
+        }
+
+        .project-item-area-0 {
+            width: 35vw;
+            height: auto;
+            position: relative;
+            left: 1vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+        }
+
+        #project-item-name {
+            width: 30vw;
+            height: auto;
+            font-size: 2vw;
+        }
+
+        #project-item-time {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+            font-weight: lighter;
+            position: relative;
+            left: 0.5vw;
+        }
+
+        #item-time-tip {
+            font-size: 2.7vh;
+        }
+
+        #item-time-real {
+            font-size: 2.5vh;
+        }
+
+        .project-item-area-1 {
+            width: 35vw;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+        }
+
+        #project-item-desc {
+            width: 25vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+        }
+
+        #project-item-desc-tip {
+            font-size: 1.5vw;
+        }
+
+        #project-item-desc-word {
+            height: 5vh;
+            font-size: 0.90vw;
+            font-weight: lighter;
+            position: relative;
+            left: 0.5vw;
+        }
+
+        .project-item-state {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+        }
+
+        #project-item-state-tip {
+            font-size: 1.5vw;
+        }
+
+        #project-item-state-color {
+            background: #ef0a0a;
+            width: 4vw;
+            height: 3vh;
+            position: relative;
+            left: 0.5vw;
+        }
+
+        .project-item-area-2 {
+            width: 10vw;
+            height: 10vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            position: relative;
+            left: 15vw;
+        }
+
+        #project-item-link {
+            font-size: 3vh;
+        }
+
+        #project-item-link-icon {
+            width: 2vw;
+            height: 2vw;
+            position: relative;
+            left: 0.5vw;
+        }
+
+        #item-link-icon-img {
+            width: 2vw;
+            height: 2vw;
+        }
     </style>
 </head>
 <body>
@@ -74,30 +226,34 @@
         </div>
         <div class="body">
             <div class="body-title">
-                <div id="body-title-icon">ti</div>
-                <div id="body-title-text">tt</div>
+                <div id="body-title-icon">
+                    <img id="body-title-icon-img" src="../../assets/icon-project-title.svg" alt="">
+                </div>
+                <div id="body-title-text">项目</div>
             </div>
             <div class="project-item">
                 <div class="project-item-area-0">
-                    <div id="project-item-name">pn</div>
+                    <div id="project-item-name">Project Name</div>
                     <div id="project-item-time">
-                        <div id="item-time-tip">tt</div>
-                        <div id="item-time-real">tr</div>
+                        <div id="item-time-tip">更新时间：</div>
+                        <div id="item-time-real">yyyy-mm-dd</div>
                     </div>
                 </div>
                 <div class="project-item-area-1">
                     <div id="project-item-desc">
-                        <div id="project-item-desc-tip">dt</div>
-                        <div id="project-item-desc-word">dw</div>
+                        <div id="project-item-desc-tip">项目描述：</div>
+                        <div id="project-item-desc-word">description...</div>
                     </div>
                     <div class="project-item-state">
-                        <div id="project-item-state-tip">st</div>
-                        <div id="project-item-state-color">sc</div>
+                        <div id="project-item-state-tip">项目状态</div>
+                        <div id="project-item-state-color"></div>
                     </div>
                 </div>
                 <div class="project-item-area-2">
-                    <div id="project-item-link">il</div>
-                    <div id="project-item-link-icon">li</div>
+                    <div id="project-item-link">前往项目</div>
+                    <div id="project-item-link-icon">
+                        <img id="item-link-icon-img" src="../../assets/github-BvZbiQmu.svg" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>
