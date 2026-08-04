@@ -1,3 +1,9 @@
 [
-  {"title": "Test", "time": "2026-7-30", "editor": "EthanYan", "url": "./2026/Jul/30/test.html"}
+  {"title": "Test",
+    "time": "2026-7-30",
+    "editor": "EthanYan",
+    "url": "./2026/Jul/30/test.html",
+    "description": "Description...",
+    "platform": "Github",
+    "state": "Test"}
 ]
