@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128mm"
+   height="128mm"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="icon-instagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.71891835"
+     inkscape:cx="26.428592"
+     inkscape:cy="267.76337"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient11"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ff8080;stop-opacity:1;"
+         offset="0"
+         id="stop12" />
+      <stop
+         style="stop-color:#ff0101;stop-opacity:1;"
+         offset="1"
+         id="stop13" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#939393;stop-opacity:0.98046875;"
+         offset="0"
+         id="stop11" />
+      <stop
+         style="stop-color:#252525;stop-opacity:1;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#acacac;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#eaeaea;stop-opacity:1;"
+         offset="0.61350572"
+         id="stop9" />
+      <stop
+         style="stop-color:#e6e6e6;stop-opacity:1;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#dadada;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:1;"
+         offset="0.27011493"
+         id="stop6" />
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:1;"
+         offset="0.54741377"
+         id="stop4" />
+      <stop
+         style="stop-color:#f4f4f4;stop-opacity:1;"
+         offset="0.84195399"
+         id="stop5" />
+      <stop
+         style="stop-color:#989898;stop-opacity:1;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,15.494052,0,1 @ F,0,0,1,0,13.837918,0,1 @ F,0,0,1,0,13.837918,0,1 @ F,0,0,1,0,14.021933,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1-4"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,15.494052,0,1 @ F,0,0,1,0,13.837918,0,1 @ F,0,0,1,0,13.837918,0,1 @ F,0,0,1,0,14.021933,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient3"
+       x1="70.723358"
+       y1="34.61607"
+       x2="73.176582"
+       y2="104.86718"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6"
+       id="linearGradient8"
+       x1="61.088951"
+       y1="103.16841"
+       x2="82.810989"
+       y2="36.314842"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9"
+       id="radialGradient11"
+       cx="67.681412"
+       cy="67.494339"
+       fx="67.681412"
+       fy="67.494339"
+       r="15.736445"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.79789008,1.0202855,-1.011811,-0.79126274,188.13887,47.156163)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11"
+       id="radialGradient13"
+       cx="90.675797"
+       cy="45.113823"
+       fx="90.675797"
+       fy="45.113823"
+       r="6.5357018"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.45985458,0.79052675,-0.80540829,-0.46851125,171.39728,-5.5212683)" />
+  </defs>
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g13"
+       transform="matrix(1.7127063,0,0,1.7127063,-57.440462,-58.693984)">
+      <path
+         style="fill:url(#linearGradient3);fill-opacity:1;stroke:url(#linearGradient8);stroke-width:2;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="rect1-5"
+         width="70.293999"
+         height="70.293678"
+         x="36.802975"
+         y="34.594795"
+         inkscape:path-effect="#path-effect1-4"
+         sodipodi:type="rect"
+         d="M 52.297027,34.594795 H 93.259055 A 13.837918,13.837918 45 0 1 107.09697,48.432713 V 91.050556 A 13.837918,13.837918 135 0 1 93.259055,104.88847 H 50.824908 A 14.021933,14.021933 45 0 1 36.802975,90.866541 V 50.088847 A 15.494052,15.494052 135 0 1 52.297027,34.594795 Z"
+         transform="translate(-1.0443783,1.8958568)" />
+      <path
+         id="path1"
+         style="fill:#7d7d7d;fill-opacity:1;stroke-width:1.09;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         d="M 70.905436,51.579781 A 20.057597,20.057597 0 0 0 50.847868,71.637635 20.057597,20.057597 0 0 0 70.905436,91.695201 20.057597,20.057597 0 0 0 90.963004,71.637635 20.057597,20.057597 0 0 0 70.905436,51.579781 Z m 0,4.312414 A 15.745214,15.745214 0 0 1 86.65059,71.637635 15.745214,15.745214 0 0 1 70.905436,87.382784 15.745214,15.745214 0 0 1 55.160281,71.637635 15.745214,15.745214 0 0 1 70.905436,55.892195 Z" />
+      <circle
+         style="fill:url(#radialGradient11);fill-opacity:1;stroke-width:1.2576;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1"
+         cx="70.905434"
+         cy="71.637489"
+         r="15.736445" />
+      <circle
+         style="fill:#ffffff;fill-opacity:0.0357143;stroke-width:1.12762;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-2"
+         cx="70.888649"
+         cy="71.739227"
+         r="14.109968" />
+      <circle
+         style="fill:#ffffff;fill-opacity:0.0357143;stroke-width:1.02468;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-2-4"
+         cx="70.888649"
+         cy="71.739227"
+         r="12.821864" />
+      <ellipse
+         style="fill:#080808;fill-opacity:0.0357143;stroke-width:0.931093;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-2-4-3"
+         cx="70.888649"
+         cy="71.739227"
+         rx="11.651"
+         ry="11.650801" />
+      <circle
+         style="fill:url(#radialGradient13);stroke-width:0.375252;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-6"
+         cx="94.356094"
+         cy="46.907963"
+         r="4.6955528" />
+      <ellipse
+         style="fill:#000000;fill-opacity:1;stroke-width:0.52231;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-6-6-1"
+         cx="70.888649"
+         cy="71.739227"
+         rx="6.5359998"
+         ry="6.5357018" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.134354;stroke-width:0.184371;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-6-6-4"
+         cx="68.777611"
+         cy="69.506477"
+         rx="2.307158"
+         ry="2.3070529" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.134354;stroke-width:0.363746;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-6-6-4-9"
+         cx="64.798889"
+         cy="62.907726"
+         rx="4.5517988"
+         ry="4.5515909" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.134354;stroke-width:0.0659676;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         id="path2-1-3-6-6-4-9-8"
+         cx="67.269485"
+         cy="66.981071"
+         rx="0.82549769"
+         ry="0.82546002" />
+      <text
+         xml:space="preserve"
+         style="font-size:6.74654px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0.134354;stroke-width:0.265611;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         x="43.414501"
+         y="47.032825"
+         id="text13"><tspan
+           sodipodi:role="line"
+           id="tspan13"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pristina;-inkscape-font-specification:Pristina;fill:#000000;fill-opacity:1;stroke-width:0.265611"
+           x="43.414501"
+           y="47.032825">Instagram</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.74654px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.134354;stroke-width:0.265611;stroke-linejoin:bevel;stroke-miterlimit:10.7;paint-order:markers stroke fill"
+         x="43.699802"
+         y="47.073128"
+         id="text13-2"><tspan
+           sodipodi:role="line"
+           id="tspan13-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pristina;-inkscape-font-specification:Pristina;fill:#8f8f8f;fill-opacity:0.134354;stroke-width:0.265611"
+           x="43.699802"
+           y="47.073128">Instagram</tspan></text>
+    </g>
+  </g>
+</svg>
