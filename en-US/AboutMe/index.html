@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XianYin69 - 关于我</title>
+    <link rel="icon" href="../../assets/intro-ClAmIAr9.svg">
+    <style>
+        body {
+            width: auto;
+            height: auto;
+            overflow-x: hidden;
+            background: url("../../assets/background-C9m4Fl5w.svg") no-repeat fixed center;
+            background-size: cover;
+        }
+
+        .mainPage {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            width: 100%;
+            height: 100%;
+        }
+
+        .head {
+            width: 30vw;
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            position: relative;
+            font-size: 1.8vw;
+            left: 36vw;
+            justify-content: center;
+        }
+
+        #head-home {
+            text-decoration: none;
+            -webkit-text-fill-color: #0aefeb;
+            font-weight: bold;
+            text-shadow: 0.1vw 0.1vw 0.5vw #9ff4fc;
+        }
+
+        #head-home:hover {
+            -webkit-text-fill-color: #1ed4ef;
+            text-shadow: 0.1vw 0.1vw 0.5vw #bafcff;
+        }
+
+        #head-project {
+            text-decoration: none;
+            -webkit-text-fill-color: #0aefeb;
+            font-weight: bold;
+            text-shadow: 0.1vw 0.1vw 0.5vw #9ff4fc;
+        }
+
+        #head-project:hover {
+            -webkit-text-fill-color: #1ed4ef;
+            text-shadow: 0.1vw 0.1vw 0.5vw #bafcff;
+        }
+
+        #head-link {
+            text-decoration: none;
+            -webkit-text-fill-color: #0aefeb;
+            font-weight: bold;
+            text-shadow: 0.1vw 0.1vw 0.5vw #9ff4fc;
+        }
+
+        #head-link:hover {
+            -webkit-text-fill-color: #1ed4ef;
+            text-shadow: 0.1vw 0.1vw 0.5vw #bafcff;
+        }
+
+
+        .body-head {
+            width: 100%;
+            height: 35vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+            background: rgb(37 218 209 / 0.36);
+        }
+
+        #body-head-icon {
+            width: 17vw;
+            height: 17vw;
+            background: rgb(9 206 228 / 0.33);
+            border-radius: 1.5vw;
+            position: relative;
+            left: 2vw;
+            top: 1vh;
+        }
+
+        #body-head-icon-img {
+            width: 15vw;
+            height: 15vw;
+            position: relative;
+            top: 1vw;
+            left: 1vw;
+        }
+
+        #body-head-intro {
+            width: auto;
+            height: 13vh;
+            display: flex;
+            flex-direction: column;
+            gap: 2.3vh;
+            position: relative;
+            top: 20vh;
+        }
+
+        #body-head-intro-name {
+            width: auto;
+            height: 4vh;
+            font-size: 4vw;
+            font-weight: lighter;
+            -webkit-text-fill-color: #000000;
+        }
+
+        #body-head-intro-link {
+            width: auto;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+            position: relative;
+            top: 5vh;
+        }
+
+        #body-head-intro-github {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+            width: auto;
+            height: auto;
+        }
+
+        #body-head-intro-github-icon-img {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-github-link {
+            width: auto;
+            height: auto;
+            text-decoration: none;
+            -webkit-text-fill-color: #0c9d9a;
+            font-weight: bold;
+            font-size: 1.7vw;
+        }
+        #body-head-intro-email {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+        }
+
+        #body-head-intro-email-icon-img {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-email-link {
+            width: auto;
+            height: auto;
+            text-decoration: none;
+            -webkit-text-fill-color: #0c9d9a;
+            font-weight: bold;
+            font-size: 1.7vw;
+        }
+
+        #body-head-intro-facebook {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+            width: auto;
+            height: auto;
+        }
+
+        #body-head-intro-facebook-icon {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-facebook-icon-img {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-facebook-link {
+            width: auto;
+            height: auto;
+            text-decoration: none;
+            -webkit-text-fill-color: #0c9d9a;
+            font-weight: bold;
+            font-size: 1.7vw;
+        }
+
+        #body-head-intro-instagram {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+        }
+
+        #body-hand-intro-instagram-icon {
+            width: 3vw;
+            height: 3vw;
+        }
+        #body-hand-intro-instagram-icon-img {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-instagram-link {
+            width: auto;
+            height: auto;
+            text-decoration: none;
+            -webkit-text-fill-color: #0c9d9a;
+            font-weight: bold;
+            font-size: 1.7vw;
+        }
+
+        #body-head-intro-discord {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+        }
+
+        #body-head-intro-discord-icon {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-discord-icon-img {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        #body-head-intro-discord-link {
+            width: auto;
+            height: auto;
+            font-weight: bold;
+            font-size: 1.7vw;
+            -webkit-text-fill-color: #0c9d9a;
+        }
+
+        .body-intro {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            position: relative;
+            top: 1vh;
+        }
+
+        #body-intro-title {
+            font-size: 3vw;
+            position: relative;
+            left: 1vw;
+            -webkit-text-fill-color: #0c9d9a;
+        }
+
+        #body-intro-content {
+            width: 99vw;
+            height: auto;
+            background: rgb(11 228 216 / 0.17);
+            font-size: 2vw;
+        }
+
+        #body-intro-content-text {
+            width: auto;
+            height: auto;
+            position: relative;
+            left: 0.5vw;
+            -webkit-text-fill-color: #0f7372;
+            font-weight: normal;
+        }
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="mainPage">
+        <div class="head">
+            <a id="head-project" href="../Project/index.html">项目</a>
+            <a id="head-link" href="../Link/index.html">相关链接</a>
+            <a id="head-home" href="../index.html">主页</a>
+        </div>
+        <div class="body">
+            <div class="body-head">
+                <div id="body-head-icon">
+                    <img src="https://avatars.githubusercontent.com/u/62499077?s=400&u=02bcf0c0bfed7fe870fa265369260f81c89a7fc3&v=4" id="body-head-icon-img" alt="">
+                </div>
+                <div id="body-head-intro">
+                    <div id="body-head-intro-name">XianYin69 (Ethan Yan)</div>
+                    <div id="body-head-intro-link">
+                        <div id="body-head-intro-github">
+                            <div id="body-head-intro-github-icon">
+                                <img id="body-head-intro-github-icon-img" src="../../assets/github-BvZbiQmu.svg" alt=""/>
+                            </div>
+                            <a id="body-head-intro-github-link" href="https://github.com/XianYin69">Github</a>
+                        </div>
+                        <div id="body-head-intro-email">
+                            <div id="body-head-intro-email-icon">
+                                <img id="body-head-intro-email-icon-img" src="../../assets/email-fV8AX2Zc.svg" alt=""/>
+                            </div>
+                            <a id="body-head-intro-email-link" href="mailto:www324608yf@outlook.com">电子邮件</a>
+                        </div>
+                        <div id="body-head-intro-facebook">
+                            <div id="body-head-intro-facebook-icon">
+                                <img id="body-head-intro-facebook-icon-img" src="../../assets/icon-facebook.svg" alt=""/>
+                            </div>
+                            <a id="body-head-intro-facebook-link" href="https://www.facebook.com/profile.php?id=61584338391830">脸书</a>
+                        </div>
+                        <div id="body-head-intro-instagram">
+                            <div id="body-hand-intro-instagram-icon">
+                                <img id="body-hand-intro-instagram-icon-img" src="../../assets/icon-instagram.svg" alt=""/>
+                            </div>
+                            <a id="body-head-intro-instagram-link" href="https://www.instagram.com/ethanyan2025/">照片墙</a>
+                        </div>
+                        <div id="body-head-intro-discord">
+                            <div id="body-head-intro-discord-icon">
+                                <img id="body-head-intro-discord-icon-img" src="../../assets/icon-discord.svg" alt=""/>
+                            </div>
+                            <div id="body-head-intro-discord-link">xianyin0939_87948</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-intro">
+                <div id="body-intro-title">简介</div>
+                <div id="body-intro-content">
+                    <b id="body-intro-content-text">
+                        &ensp;这是一位 神人 ，懒癌晚期患者兼阿宅！<br>
+                        &ensp;一位很⑨的 大笨蛋 ！<br>
+                        &ensp;一个 大 魔法师！<br>
+                        &ensp;和这人合作的人 都 很不幸！<br>
+                    </b>
+                </div>
+            </div>
+        </div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>

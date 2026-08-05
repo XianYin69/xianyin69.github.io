@@ -2,9 +2,363 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XianYin 69 - Home</title>
+    <link rel="icon" href="../assets/intro-ClAmIAr9.svg">
+    <style>
+        body {
+            width: auto;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background: url("../assets/background-C9m4Fl5w.svg") no-repeat fixed center;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-page {
+            left: 1vw;
+            top: 1vw;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+        }
+
+        .head {
+            width: 30vw;
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            position: relative;
+            font-size: 1.8vw;
+            left: 36vw;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            -webkit-text-fill-color: #0aefeb;
+            font-weight: bold;
+            text-shadow: 0.1vw 0.1vw 0.5vw #9ff4fc;
+        }
+
+        a:hover {
+            -webkit-text-fill-color: #1ed4ef;
+            text-shadow: 0.1vw 0.1vw 0.5vw #bafcff;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        .body {
+            width: 50vw;
+            position: relative;
+            top: 1vw;
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+            left: 8vw;
+        }
+
+        .area-0 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+        }
+
+        .area-1 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+        }
+
+        .clock {
+            width: 30vw;
+            height: 20vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+            font-size: 2vw;
+            background: rgb(14 241 236 / 0.14);
+        }
+
+        #clock-num {
+            width: 15vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2vw;
+            margin-left: 1vw;
+            margin-top: 0.5vw;
+        }
+
+        #cn-now {
+            width: 15vw;
+            height: auto;
+            font-size: 1.5vw;
+            font-weight: bold;
+            -webkit-text-fill-color: #0aefeb;
+        }
+
+        #cn-date {
+            width: 10vw;
+            font-size: 1.1vw;
+            font-weight: bold;
+            -webkit-text-fill-color: #05b6b3;
+        }
+
+        #cn-date:hover {
+            text-shadow: 0.1vw 0.1vw 0.1vw #07eeb7;
+        }
+
+        #cn-time {
+            width: 20vw;
+            height: auto;
+            -webkit-text-fill-color: #0cd6d3;
+        }
+
+        #cn-time:hover {
+            text-shadow: 0.1vw 0.1vw 0.2vw #07efda;
+        }
+
+        #clock-real {
+            width: 7.5vw;
+            height: 7.2vw;
+            margin-top: 1.5vw;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .analog-clock {
+            width: 100%;
+            height: 100%;
+            border: 0.15vw solid #0f8a88;
+            border-radius: 50%;
+            position: relative;
+            background: rgba(14, 241, 236, 0.05);
+            box-shadow: 0 0 0.5vw rgba(10, 239, 235, 0.2);
+        }
+
+        .hand {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+            border-radius: 0.1vw;
+        }
+
+        .hour-hand {
+            width: 0.25vw;
+            height: 1.7vw;
+            background: #05a19f;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .minute-hand {
+            width: 0.15vw;
+            height: 2.8vw;
+            background: #2ac5c3;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .second-hand {
+            width: 0.08vw;
+            height: 3.5vw;
+            background: #05b6b3;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .center-dot {
+            width: 0.4vw;
+            height: 0.4vw;
+            background: #0aefeb;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .news {
+            width: 30vw;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            font-size: 3vw;
+            background: rgb(14 241 236 / 0.14);
+        }
+
+        #news-title {
+            font-weight: bold;
+            width: 20vw;
+            height: auto;
+            font-size: 2vw;
+            -webkit-text-fill-color: #0adeda;
+            margin-left: 1.2vw;
+            margin-top: 0.2vh;
+        }
+
+        #news-content {
+            width: 28vw;
+            height: 30vh;
+            margin-left: 1vw;
+        }
+
+        .project {
+            width: 50vw;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            font-size: 3vw;
+            background: rgb(14 241 236 / 0.14);
+        }
+
+        #project-title {
+            font-weight: bold;
+            width: 20vw;
+            height: auto;
+            font-size: 2vw;
+            -webkit-text-fill-color: #0adeda;
+            margin-left: 1.2vw;
+            margin-top: 0.2vh;
+        }
+
+        #project-content {
+            width: 48vw;
+            height: 30vh;
+            margin-left: 1vw;
+        }
+
+        .article {
+            width: 50vw;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            font-size: 3vw;
+            background: rgb(14 241 236 / 0.14);
+        }
+
+        #article-title {
+            font-weight: bold;
+            width: 20vw;
+            height: auto;
+            font-size: 2vw;
+            -webkit-text-fill-color: #0adeda;
+            margin-left: 1.2vw;
+            margin-top: 0.2vh;
+        }
+
+        #article-content {
+            width: 48vw;
+            height: 30vh;
+            margin-left: 1vw;
+        }
+
+    </style>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            // get Current date
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, "0");
+            const day = String(now.getDate()).padStart(2, "0");
+            const hour = String(now.getHours()).padStart(2, "0");
+            const minute = String(now.getMinutes()).padStart(2, "0");
+            const second = String(now.getSeconds()).padStart(2, "0");
+
+            //Compute Clock Hand
+            const hourDeg = (hour % 12) * 30 + minute * 0.5;
+            const minuteDeg = minute * 6 + second * 0.1;
+            const secondDeg = second * 6;
+
+            //Write DOM
+            const dateElement = document.getElementById('cn-date');
+            const timeElement = document.getElementById('cn-time');
+
+            const hourHand = document.getElementById('hour-hand');
+            const minuteHand = document.getElementById('minute-hand');
+            const secondHand = document.getElementById('second-hand');
+
+            if(dateElement) {
+                dateElement.textContent = `${year} - ${month} - ${day} `;
+            }
+            if(timeElement) {
+                timeElement.textContent = `${hour} : ${minute} : ${second}`;
+            }
+
+            if (hourHand) hourHand.style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+            if (minuteHand) minuteHand.style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+            if (secondHand) secondHand.style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
+        }
+
+        //fresh
+        document.addEventListener('DOMContentLoaded', () => {
+            updateClock();
+            setInterval(updateClock, 1000);
+        });
+    </script>
 </head>
 <body>
-
+    <div class="main-page">
+        <div class="head">
+            <a id = "about-me" href="./AboutMe/index.html">About Me</a>
+            <a id = "project" href="./Project/index.html">Project</a>
+            <a id = "link" href="./Link/index.html">Link</a>
+        </div>
+        <div class="body">
+            <div class="area-0">
+                <div class="clock">
+                    <div id="clock-num">
+                        <div id="cn-now">Now:</div>
+                        <div id="cn-date"></div>
+                        <div id = "cn-time"></div>
+                    </div>
+                    <div id="clock-real">
+                        <div class="analog-clock">
+                            <div class="hand hour-hand" id="hour-hand"></div>
+                            <div class="hand minute-hand" id="minute-hand"></div>
+                            <div class="hand second-hand" id="second-hand"></div>
+                            <div class="center-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div id="news-title">News</div>
+                    <div id="news-content">
+                        <iframe src="../News/news-content.html" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="area-1">
+                <div class="project">
+                    <div id="project-title">Project</div>
+                    <div id="project-content">
+                        <iframe src="../Projects/projects-content.html" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+                <div class="article">
+                    <div id="article-title">Article</div>
+                    <div id="article-content">
+                        <iframe src="../Article/article-content.html" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
