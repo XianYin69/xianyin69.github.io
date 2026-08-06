@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1080">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7 {
+        fill: lime;
+      }
+
+      .st0, .st8 {
+        opacity: .43;
+      }
+
+      .st1, .st9 {
+        opacity: .09;
+      }
+
+      .st10, .st11, .st12, .st13, .st14, .st9, .st15, .st16, .st17, .st8 {
+        fill: aqua;
+      }
+
+      .st11 {
+        opacity: .68;
+      }
+
+      .st2, .st15 {
+        opacity: .15;
+      }
+
+      .st12 {
+        opacity: .07;
+      }
+
+      .st13, .st7 {
+        opacity: .13;
+      }
+
+      .st14, .st5 {
+        opacity: .05;
+      }
+
+      .st18 {
+        opacity: .02;
+      }
+
+      .st3 {
+        opacity: .06;
+      }
+
+      .st16, .st6 {
+        opacity: .1;
+      }
+
+      .st17 {
+        opacity: .24;
+      }
+
+      .st4 {
+        opacity: .08;
+      }
+    </style>
+  </defs>
+  <g id="_图层_1" data-name="图层_1">
+    <g class="st18">
+      <rect class="st10" x="0" y="0" width="1920" height="1083"/>
+    </g>
+    <rect class="st12" x="146" y="217" width="281" height="863"/>
+    <rect class="st17" x="363" y="478" width="281" height="602"/>
+    <rect class="st15" x="532" y="129" width="281" height="951"/>
+    <rect class="st15" x="782" y="649" width="109" height="431"/>
+    <rect class="st2" x="856" y="492" width="23" height="588"/>
+  </g>
+  <g id="_图层_2" data-name="图层_2">
+    <ellipse class="st7" cx="1811.5" cy="1033.5" rx="80.5" ry="35.5"/>
+    <ellipse class="st7" cx="1625.5" cy="1016.5" rx="80.5" ry="35.5"/>
+    <ellipse class="st13" cx="1746.5" cy="952.5" rx="80.5" ry="35.5"/>
+    <ellipse class="st6" cx="1839.3" cy="879" rx="63.49" ry="28"/>
+    <ellipse class="st6" cx="1568.32" cy="945" rx="63.49" ry="28"/>
+    <ellipse class="st9" cx="1666.32" cy="879" rx="63.49" ry="28"/>
+    <ellipse class="st16" cx="1458.32" cy="1026" rx="63.49" ry="28"/>
+    <ellipse class="st3" cx="1434.51" cy="962.5" rx="39.68" ry="17.5"/>
+    <ellipse class="st4" cx="1355.48" cy="998.21" rx="39.68" ry="17.5"/>
+    <ellipse class="st5" cx="1305.48" cy="1046.21" rx="39.68" ry="17.5"/>
+    <ellipse class="st1" cx="1553.48" cy="891.21" rx="39.68" ry="17.5"/>
+    <ellipse class="st14" cx="1768.48" cy="823.21" rx="39.68" ry="17.5"/>
+    <ellipse class="st14" cx="1451.48" cy="907.21" rx="39.68" ry="17.5"/>
+  </g>
+  <g id="_图层_3" data-name="图层_3">
+    <path class="st11" d="M348.1,977.23c127.13-18.46,240.39-26.77,308.5-24.28-39.2-11.9-167.64-6.21-318.2,15.64-165.45,24.02-299.75,59.18-316.95,81.91,58.31-23.79,182.01-52.28,326.64-73.28Z"/>
+    <path class="st0" d="M513.58,965.37c127.13-18.46,239.91-30.05,307.3-32.55-38.17-4.81-165.85,6.1-316.41,27.96-165.45,24.02-300.67,52.87-319.05,67.45,59.2-17.62,183.52-41.86,328.15-62.86Z"/>
+    <path class="st0" d="M1146.23,959.82c-128.46,0-241.74-4.74-308.79-11.94,37.08,10.24,165.01,17.79,317.14,17.79,167.18,0,305.15-9.12,325.43-20.91-61.12,8.93-187.63,15.06-333.78,15.06Z"/>
+    <path class="st8" d="M1300.59,944.08c117.25-17.02,221.34-27.35,283.57-29.1-35.32-5.22-153.17,4.26-292.04,24.42-152.6,22.16-277.22,49.46-294.04,63.82,54.51-16.93,169.1-39.77,302.5-59.13Z"/>
+  </g>
+</svg>
