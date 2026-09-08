@@ -234,7 +234,7 @@
         }
 
         /* 响应式适配：竖屏及小屏幕 */
-        @media screen and (max-width: 768px), screen and (orientation: portrait) and (max-height: 600px) {
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
             body { overflow-x: hidden; }
             .mainPage { width: 100%; }
             .head {
@@ -273,8 +273,15 @@
                 padding: 10px;
                 box-sizing: border-box;
             }
-            .project-item-area-0, .project-item-area-1, .project-item-area-2 {
+            .project-item-area-0, .project-item-area-1 {
                 width: 100%;
+                left: 0;
+            }
+            .project-item-area-2 {
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
                 left: 0;
             }
             #project-item-name { width: 100%; }
@@ -285,7 +292,10 @@
             #project-item-desc-word { font-size: 12px; height: auto; }
             #project-item-state-tip { font-size: 14px; }
             #project-item-state-color { width: 30px; height: 15px; left: 0; }
-            #project-item-link { font-size: 14px; }
+            #project-item-link {
+                font-size: 14px;
+                white-space: nowrap;
+            }
             #project-item-link-icon { width: 20px; height: 20px; left: 0; }
             #item-link-icon-img { width: 20px; height: 20px; }
         }
