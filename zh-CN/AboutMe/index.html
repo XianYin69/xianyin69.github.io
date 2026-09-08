@@ -280,6 +280,48 @@
             font-weight: normal;
         }
 
+        /* 响应式适配：竖屏及小屏幕 */
+        @media screen and (max-width: 768px), screen and (orientation: portrait) and (max-height: 600px) {
+            body { overflow-x: hidden; }
+            .mainPage { width: 100%; }
+            .head {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                left: 0;
+                gap: 10px;
+                padding: 10px 0;
+            }
+            #head-home, #head-project, #head-link { font-size: 16px; text-shadow: none; }
+            .body-head {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                gap: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #body-head-icon { width: 120px; height: 120px; left: 0; top: 0; margin: 0 auto; }
+            #body-head-icon-img { width: 100px; height: 100px; top: 10px; left: 10px; }
+            #body-head-intro { width: 100%; height: auto; top: 0; text-align: center; }
+            #body-head-intro-name { font-size: 20px; height: auto; }
+            #body-head-intro-link { flex-direction: column; gap: 10px; top: 10px; align-items: center; }
+            #body-head-intro-github, #body-head-intro-email, #body-head-intro-facebook, #body-head-intro-instagram, #body-head-intro-discord {
+                flex-direction: row; align-items: center; gap: 8px;
+            }
+            #body-head-intro-github-icon-img, #body-head-intro-email-icon-img, #body-head-intro-facebook-icon-img, #body-hand-intro-instagram-icon-img, #body-head-intro-discord-icon-img {
+                width: 24px; height: 24px;
+            }
+            #body-head-intro-github-link, #body-head-intro-email-link, #body-head-intro-facebook-link, #body-head-intro-instagram-link, #body-head-intro-discord-link {
+                font-size: 14px;
+            }
+            .body-intro { width: 100%; }
+            #body-intro-title { font-size: 20px; left: 10px; }
+            #body-intro-content { width: 100%; font-size: 14px; padding: 10px; box-sizing: border-box; }
+            #body-intro-content-text { left: 0; font-size: 14px; }
+        }
+
     </style>
     <script>
 
