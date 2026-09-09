@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>XianYin69 - 关于我</title>
+    <title>XianYin69 - About Me</title>
     <link rel="icon" href="../../assets/intro-ClAmIAr9.svg">
     <style>
         body {
@@ -280,6 +280,48 @@
             font-weight: normal;
         }
 
+        /* Responsive styles for portrait and small screens */
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            body { overflow-x: hidden; }
+            .mainPage { width: 100%; }
+            .head {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 16px;
+                left: 0;
+                gap: 10px;
+                padding: 10px 0;
+            }
+            #head-home, #head-project, #head-link { font-size: 16px; text-shadow: none; }
+            .body-head {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                gap: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #body-head-icon { width: 120px; height: 120px; left: 0; top: 0; margin: 0 auto; }
+            #body-head-icon-img { width: 100px; height: 100px; top: 10px; left: 10px; }
+            #body-head-intro { width: 100%; height: auto; top: 0; text-align: center; }
+            #body-head-intro-name { font-size: 20px; height: auto; }
+            #body-head-intro-link { flex-direction: column; gap: 10px; top: 10px; align-items: center; }
+            #body-head-intro-github, #body-head-intro-email, #body-head-intro-facebook, #body-head-intro-instagram, #body-head-intro-discord {
+                flex-direction: row; align-items: center; gap: 8px;
+            }
+            #body-head-intro-github-icon-img, #body-head-intro-email-icon-img, #body-head-intro-facebook-icon-img, #body-hand-intro-instagram-icon-img, #body-head-intro-discord-icon-img {
+                width: 24px; height: 24px;
+            }
+            #body-head-intro-github-link, #body-head-intro-email-link, #body-head-intro-facebook-link, #body-head-intro-instagram-link, #body-head-intro-discord-link {
+                font-size: 16px;
+            }
+            .body-intro { width: 100%; }
+            #body-intro-title { font-size: 22px; left: 10px; }
+            #body-intro-content { width: 100%; font-size: 16px; padding: 10px; box-sizing: border-box; }
+            #body-intro-content-text { left: 0; font-size: 16px; }
+        }
+
     </style>
     <script>
 
@@ -288,9 +330,9 @@
 <body>
     <div class="mainPage">
         <div class="head">
-            <a id="head-project" href="../Project/index.html">项目</a>
-            <a id="head-link" href="../Link/index.html">相关链接</a>
-            <a id="head-home" href="../index.html">主页</a>
+            <a id="head-project" href="../Project/index.html">Projects</a>
+            <a id="head-link" href="../Link/index.html">Links</a>
+            <a id="head-home" href="../index.html">Home</a>
         </div>
         <div class="body">
             <div class="body-head">
@@ -310,19 +352,19 @@
                             <div id="body-head-intro-email-icon">
                                 <img id="body-head-intro-email-icon-img" src="../../assets/email-fV8AX2Zc.svg" alt=""/>
                             </div>
-                            <a id="body-head-intro-email-link" href="mailto:www324608yf@outlook.com">电子邮件</a>
+                            <a id="body-head-intro-email-link" href="mailto:www324608yf@outlook.com">Email</a>
                         </div>
                         <div id="body-head-intro-facebook">
                             <div id="body-head-intro-facebook-icon">
                                 <img id="body-head-intro-facebook-icon-img" src="../../assets/icon-facebook.svg" alt=""/>
                             </div>
-                            <a id="body-head-intro-facebook-link" href="https://www.facebook.com/profile.php?id=61584338391830">脸书</a>
+                            <a id="body-head-intro-facebook-link" href="https://www.facebook.com/profile.php?id=61584338391830">Facebook</a>
                         </div>
                         <div id="body-head-intro-instagram">
                             <div id="body-hand-intro-instagram-icon">
                                 <img id="body-hand-intro-instagram-icon-img" src="../../assets/icon-instagram.svg" alt=""/>
                             </div>
-                            <a id="body-head-intro-instagram-link" href="https://www.instagram.com/ethanyan2025/">照片墙</a>
+                            <a id="body-head-intro-instagram-link" href="https://www.instagram.com/ethanyan2025/">Instagram</a>
                         </div>
                         <div id="body-head-intro-discord">
                             <div id="body-head-intro-discord-icon">
@@ -334,13 +376,13 @@
                 </div>
             </div>
             <div class="body-intro">
-                <div id="body-intro-title">简介</div>
+                <div id="body-intro-title">About Me</div>
                 <div id="body-intro-content">
                     <b id="body-intro-content-text">
-                        &ensp;这是一位 神人 ，懒癌晚期患者兼阿宅！<br>
-                        &ensp;一位很⑨的 大笨蛋 ！<br>
-                        &ensp;一个 大 魔法师！<br>
-                        &ensp;和这人合作的人 都 很不幸！<br>
+                        &ensp;This is a  神人 , late-stage lazy cancer patient and otaku!<br>
+                        &ensp;A very ⑨ big fool!<br>
+                        &ensp;A big magician!<br>
+                        &ensp;Those who cooperate with this person are very unfortunate!<br>
                     </b>
                 </div>
             </div>
