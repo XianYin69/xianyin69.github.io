@@ -269,6 +269,118 @@
             margin-left: 1vw;
         }
 
+        /* Responsive: portrait and small screens */
+        @media screen and (max-width: 768px), screen and (orientation: portrait) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .main-page {
+                left: 0;
+                top: 0;
+            }
+
+            .head {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 18px;
+                left: 0;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            a {
+                font-size: 18px;
+                text-shadow: none;
+            }
+
+            .body {
+                width: 100%;
+                flex-direction: column;
+                position: relative;
+                top: 0;
+                left: 0;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .area-0, .area-1 {
+                width: 100%;
+                gap: 10px;
+            }
+
+            .clock {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+                font-size: 18px;
+                gap: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            #clock-num {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
+            #cn-now, #cn-date, #cn-time {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            #clock-real {
+                width: 150px;
+                height: 150px;
+                margin: 10px auto;
+            }
+
+            .analog-clock {
+                border-width: 2px;
+            }
+
+            .hour-hand {
+                width: 4px;
+                height: 40px;
+            }
+
+            .minute-hand {
+                width: 3px;
+                height: 60px;
+            }
+
+            .second-hand {
+                width: 2px;
+                height: 70px;
+            }
+
+            .center-dot {
+                width: 8px;
+                height: 8px;
+            }
+
+            .news, .project, .article {
+                width: 100%;
+                height: 40vh;
+                font-size: 16px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            #news-title, #project-title, #article-title {
+                width: 100%;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            #news-content, #project-content, #article-content {
+                width: 100%;
+                margin: 0;
+            }
+        }
     </style>
     <script>
         function updateClock() {
@@ -295,7 +407,7 @@
             const secondHand = document.getElementById('second-hand');
 
             if(dateElement) {
-                dateElement.textContent = `${year} - ${month} - ${day} `;
+                dateElement.textContent = `${year} - ${month} - ${day}`;
             }
             if(timeElement) {
                 timeElement.textContent = `${hour} : ${minute} : ${second}`;
@@ -317,14 +429,14 @@
     <div class="main-page">
         <div class="head">
             <a id = "about-me" href="./AboutMe/index.html">About Me</a>
-            <a id = "project" href="./Project/index.html">Project</a>
-            <a id = "link" href="./Link/index.html">Link</a>
+            <a id = "project" href="./Project/index.html">Projects</a>
+            <a id = "link" href="./Link/index.html">Links</a>
         </div>
         <div class="body">
             <div class="area-0">
                 <div class="clock">
                     <div id="clock-num">
-                        <div id="cn-now">Now:</div>
+                        <div id="cn-now">Current time:</div>
                         <div id="cn-date"></div>
                         <div id = "cn-time"></div>
                     </div>
@@ -346,13 +458,13 @@
             </div>
             <div class="area-1">
                 <div class="project">
-                    <div id="project-title">Project</div>
+                    <div id="project-title">Projects</div>
                     <div id="project-content">
                         <iframe src="../Projects/projects-content.html" width="100%" height="100%"></iframe>
                     </div>
                 </div>
                 <div class="article">
-                    <div id="article-title">Article</div>
+                    <div id="article-title">Articles</div>
                     <div id="article-content">
                         <iframe src="../Article/article-content.html" width="100%" height="100%"></iframe>
                     </div>
