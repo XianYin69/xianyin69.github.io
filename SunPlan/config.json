@@ -1,0 +1,10 @@
+{
+  "owner": "XianYin69",
+  "repo": "SunPlan-Core",
+  "entry": "page/index.html",
+  "ref": "main",
+  "clientId": "",
+  "scope": "",
+  "pagesUrl": "",
+  "_note": "clientId=GitHub OAuth App 的 Client ID（Settings → Developer settings → OAuth Apps 新建，Homepage/Authorization callback 均填 https://xianyin69.github.io/SunPlan/ ）；填上后入口页出现「使用 GitHub 登录解锁」。pagesUrl 仅当私有仓库 Pages 可用（需付费计划）时填。"
+}
