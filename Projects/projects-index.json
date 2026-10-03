@@ -34,14 +34,5 @@
     "description": "一个Microsoft PowerToys Command Panel拓展程序",
     "platform": "Github",
     "state": "archive"
-  },
-  {
-    "title": "SunPlan",
-    "time": "2026-10",
-    "editor": "EthanYan",
-    "url": "https://xianyin69.github.io/SunPlan/",
-    "description": "太阳计划：公开入口，正文需 GitHub 登录",
-    "platform": "Github",
-    "state": "develop"
   }
 ]
